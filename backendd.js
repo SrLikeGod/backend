@@ -608,7 +608,7 @@ const FLAG_PREFIX = {
 
 const UserSchema = external_z_namespaceObject.z.object({
   "Họ Tên": external_z_namespaceObject.z.string().nullable(),
-  "Thân phận": external_z_namespaceObject.z.string().nullable(),
+  "Thân Phận": external_z_namespaceObject.z.string().nullable(),
   "Giới Tính": external_z_namespaceObject.z.string().nullable(),
   "Tuổi Tác": external_z_namespaceObject.z.string().nullable(),
   "Năng Lực Đặc Biệt": external_z_namespaceObject.z.string().nullable(),
@@ -620,14 +620,14 @@ const UserSchema = external_z_namespaceObject.z.object({
 
 const USER_FIELDS = {
   name: "Họ Tên",
-  identity: "Thân phận",
+  identity: "Thân Phận",
   gender: "Giới Tính",
   age: "Tuổi Tác",
   abilities: "Năng Lực Đặc Biệt",
   currentLocation: "Khu Vực Hiện Tại",
   home: "Khu Vực Sinh Sống",
-  events: "Trải nghiệm quan trọng",
-  relationships: "Mối quan hệ"
+  events: "Trải Nghiệm Quan Trọng",
+  relationships: "Mối Quan Hệ"
 };
 
 const getClock = runtime =&gt; runtime.clock;
@@ -3115,7 +3115,7 @@ function getCurrentIncident(stat) {
       return {
         name,
         detail: incident["Chi Tiết Dị Biến"],
-        solver: asArray(incident["Người giải quyết dị biến"]),
+        solver: asArray(incident["Người Giải Quyết Dị Biến"]),
         mainLoc: incident["Khu Vực Chính"],
         isFinished: false,
         raw: incident
