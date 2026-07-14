@@ -1,10 +1,10 @@
-<html><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/content/location/location.js" id="eppiocemhmnlbhjplcgkofciiegomcon"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/extend-native-history-api.js"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/requests.js"></script><head><meta name="color-scheme" content="light dark"><script bis_use="true" type="text/javascript" charset="utf-8" nonce="" data-dynamic-id="5db02fe1-76a8-4bb3-8a7a-3bc99e276154" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js"></script><script bis_use="true" type="text/javascript" charset="utf-8" nonce="" data-dynamic-id="5db02fe1-76a8-4bb3-8a7a-3bc99e276154" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/101.js"></script><style>undefined</style><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="use-credentials"><link rel="preconnect" href="https://fonts.gstatic.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&amp;display=swa"></head><body __processed_2bcf016f-acc5-4113-83ce-3961305f5722__="true" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJlbmFibGVkIiwiRkFDRUJPT0siOiJlbmFibGVkIiwiVFdJVFRFUiI6ImVuYWJsZWQiLCJSRURESVQiOiJlbmFibGVkIiwiUElOVEVSRVNUIjoiZW5hYmxlZCIsIklOU1RBR1JBTSI6ImVuYWJsZWQiLCJUSUtUT0siOiJkaXNhYmxlZCIsIkxJTktFRElOIjoiZW5hYmxlZCIsIkNPTkZJRyI6ImRpc2FibGVkIn0sInZlcnNpb24iOiIyLjEuMiIsInNjb3JlIjoyMDEwMjB9XQ=="><pre style="word-wrap: break-word; white-space: pre-wrap;"import { default as __WEBPACK_EXTERNAL_MODULE_https_testingcf_jsdelivr_net_npm_dedent_esm_422736dc_default__ } from "https://testingcf.jsdelivr.net/npm/dedent/+esm";
+import { default as __WEBPACK_EXTERNAL_MODULE_https_testingcf_jsdelivr_net_npm_dedent_esm_422736dc_default__ } from "https://testingcf.jsdelivr.net/npm/dedent/+esm";
 
 var __webpack_require__ = {};
 
-(() => {
-  __webpack_require__.n = module => {
-    var getter = module && module.__esModule ? () => module["default"] : () => module;
+(() =&gt; {
+  __webpack_require__.n = module =&gt; {
+    var getter = module &amp;&amp; module.__esModule ? () =&gt; module["default"] : () =&gt; module;
     __webpack_require__.d(getter, {
       a: getter
     });
@@ -12,10 +12,10 @@ var __webpack_require__ = {};
   };
 })();
 
-(() => {
-  __webpack_require__.d = (exports, definition) => {
+(() =&gt; {
+  __webpack_require__.d = (exports, definition) =&gt; {
     for (var key in definition) {
-      if (__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+      if (__webpack_require__.o(definition, key) &amp;&amp; !__webpack_require__.o(exports, key)) {
         Object.defineProperty(exports, key, {
           enumerable: true,
           get: definition[key]
@@ -25,8 +25,8 @@ var __webpack_require__ = {};
   };
 })();
 
-(() => {
-  __webpack_require__.o = (obj, prop) => Object.prototype.hasOwnProperty.call(obj, prop);
+(() =&gt; {
+  __webpack_require__.o = (obj, prop) =&gt; Object.prototype.hasOwnProperty.call(obj, prop);
 })();
 
 var __webpack_exports__ = {};
@@ -37,7 +37,7 @@ var external_default = __webpack_require__.n(external_namespaceObject);
 
 const external_z_namespaceObject = z;
 
-const PreprocessStringifiedObject = schema => external_z_namespaceObject.z.preprocess(val => {
+const PreprocessStringifiedObject = schema =&gt; external_z_namespaceObject.z.preprocess(val =&gt; {
   if (typeof val === "string") {
     try {
       return JSON.parse(val);
@@ -103,15 +103,15 @@ const CharacterSettingsMapSchema = external_z_namespaceObject.z.record(external_
 const CharacterSchema = external_z_namespaceObject.z.object({
   name: external_z_namespaceObject.z.string(),
   pic: external_z_namespaceObject.z.string().optional(),
-  "Hảo cảm": external_z_namespaceObject.z.number(),
-  "Khu vực hiện tại": external_z_namespaceObject.z.string().nullable(),
-  "Khu vực cư trú": external_z_namespaceObject.z.string().nullable(),
+  "Độ Hảo Cảm": external_z_namespaceObject.z.number(),
+  "Khu Vực Hiện Tại": external_z_namespaceObject.z.string().nullable(),
+  "Khu Vực Sinh Sống": external_z_namespaceObject.z.string().nullable(),
   affectionStages: external_z_namespaceObject.z.array(PreprocessStringifiedObject(AffectionStageWithForgetSchema)).default([]),
   specials: EntryListPreprocessSchema.default([]),
   routine: EntryListPreprocessSchema.default([]),
-  "Mục tiêu": external_z_namespaceObject.z.string().optional(),
-  "Tình trạng cơ thể": external_z_namespaceObject.z.string().optional(),
-  "Suy nghĩ nội tâm": external_z_namespaceObject.z.string().optional()
+  "Mục Tiêu": external_z_namespaceObject.z.string().optional(),
+  "Tình Trạng Cơ Thể": external_z_namespaceObject.z.string().optional(),
+  "Suy Nghĩ Nội Tâm": external_z_namespaceObject.z.string().optional()
 });
 
 const CharsSchema = external_z_namespaceObject.z.object({
@@ -119,9 +119,9 @@ const CharsSchema = external_z_namespaceObject.z.object({
 }).catchall(CharacterSchema);
 
 const CHARACTER_FIELDS = {
-  affection: "Hảo cảm",
-  currentLocation: "Khu vực hiện tại",
-  home: "Khu vực cư trú"
+  affection: "Độ Hảo Cảm",
+  currentLocation: "Khu Vực Hiện Tại",
+  home: "Khu Vực Sinh Sống"
 };
 
 function pickAffectionStage(affection, stages) {
@@ -130,7 +130,7 @@ function pickAffectionStage(affection, stages) {
   }
   const sortedStages = external_default().orderBy(stages, [ "threshold" ], [ "desc" ]);
   for (const stage of sortedStages) {
-    if (affection >= stage.threshold) {
+    if (affection &gt;= stage.threshold) {
       return stage;
     }
   }
@@ -147,7 +147,7 @@ const ChangeLogEntrySchema = external_z_namespaceObject.z.object({
 
 const ChangeLogSchema = external_z_namespaceObject.z.array(ChangeLogEntrySchema);
 
-const createChangeLogEntry = (module, path, oldValue, newValue, reason) => {
+const createChangeLogEntry = (module, path, oldValue, newValue, reason) =&gt; {
   const entry = {
     module,
     path,
@@ -158,7 +158,7 @@ const createChangeLogEntry = (module, path, oldValue, newValue, reason) => {
   return ChangeLogEntrySchema.parse(entry);
 };
 
-const TIME_PERIOD_NAMES = [ "Sáng sớm", "Buổi sáng", "Buổi trưa", "Buổi chiều", "Hoàng hôn", "Buổi đêm", "Nửa đầu đêm", "Nửa sau đêm" ];
+const TIME_PERIOD_NAMES = [ "Sáng sớm", "Buổi sáng", "Buổi trưa", "Buổi chiều", "Hoàng hôn", "Buổi tối", "Nửa đêm đầu", "Nửa đêm về sáng" ];
 
 const TIME_PERIOD_KEYS = [ "newDawn", "newMorning", "newNoon", "newAfternoon", "newDusk", "newNight", "newFirstHalfNight", "newSecondHalfNight" ];
 
@@ -180,7 +180,7 @@ function loadDebugConfig() {
   try {
     const configStr = globalThis.localStorage?.getItem(DEBUG_CONFIG_LS_KEY) || '{"enabled":[],"disabled":[]}';
     const config = JSON.parse(configStr);
-    const toRegex = p => new RegExp(`${p.replace(/\*/g, ".*")}`);
+    const toRegex = p =&gt; new RegExp(`${p.replace(/\*/g, ".*")}`);
     enabledPatterns = (config.enabled || []).map(toRegex);
     disabledPatterns = (config.disabled || []).map(toRegex);
   } catch (e) {
@@ -192,13 +192,13 @@ function loadDebugConfig() {
 
 function isDebugEnabled(moduleName) {
   if (!moduleName) return false;
-  if (disabledPatterns.some(re => re.test(moduleName))) {
+  if (disabledPatterns.some(re =&gt; re.test(moduleName))) {
     return false;
   }
   if (enabledPatterns.length === 0) {
     return false;
   }
-  if (enabledPatterns.some(re => re.test(moduleName))) {
+  if (enabledPatterns.some(re =&gt; re.test(moduleName))) {
     return true;
   }
   return false;
@@ -274,7 +274,7 @@ class Logger {
   _getModuleNameFromStack() {
     try {
       const stack = (new Error).stack || "";
-      const callerLine = stack.split("\n").find(line => (line.includes(`/src/${PROJECT_NAME}/`) || line.includes(`/dist/${PROJECT_NAME}/`) || line.includes(`\\src\\${PROJECT_NAME}\\`) || line.includes(`\\dist\\${PROJECT_NAME}\\`)) && !line.includes("/utils/log.ts"));
+      const callerLine = stack.split("\n").find(line =&gt; (line.includes(`/src/${PROJECT_NAME}/`) || line.includes(`/dist/${PROJECT_NAME}/`) || line.includes(`\\src\\${PROJECT_NAME}\\`) || line.includes(`\\dist\\${PROJECT_NAME}\\`)) &amp;&amp; !line.includes("/utils/log.ts"));
       if (!callerLine) {
         return null;
       }
@@ -427,10 +427,10 @@ function formatTime(clock) {
 }
 
 function toFiniteNumber(value) {
-  if (typeof value === "number" && Number.isFinite(value)) {
+  if (typeof value === "number" &amp;&amp; Number.isFinite(value)) {
     return value;
   }
-  if (typeof value === "string" && value.trim().length > 0) {
+  if (typeof value === "string" &amp;&amp; value.trim().length &gt; 0) {
     const parsed = Number(value);
     if (Number.isFinite(parsed)) {
       return parsed;
@@ -470,17 +470,17 @@ const TimeChatMkAnchorsSchema = external_z_namespaceObject.z.object({
   newYear: mkValueSchema
 }).partial().default({});
 
-const createEmptyAnchors = () => ({});
+const createEmptyAnchors = () =&gt; ({});
 
 const TimeChatMkSyncCacheSchema = external_z_namespaceObject.z.object({
   anchors: TimeChatMkAnchorsSchema.optional()
-}).optional().default(() => ({
+}).optional().default(() =&gt; ({
   anchors: createEmptyAnchors()
 }));
 
 const TimeChatMkSyncRuntimeSchema = external_z_namespaceObject.z.object({
   anchors: TimeChatMkAnchorsSchema.optional()
-}).optional().default(() => ({
+}).optional().default(() =&gt; ({
   anchors: createEmptyAnchors()
 }));
 
@@ -607,38 +607,38 @@ const FLAG_PREFIX = {
 };
 
 const UserSchema = external_z_namespaceObject.z.object({
-  "Họ tên": external_z_namespaceObject.z.string().nullable(),
+  "Họ Tên": external_z_namespaceObject.z.string().nullable(),
   "Thân phận": external_z_namespaceObject.z.string().nullable(),
-  "Giới tính": external_z_namespaceObject.z.string().nullable(),
-  "Tuổi": external_z_namespaceObject.z.string().nullable(),
-  "Năng lực đặc biệt": external_z_namespaceObject.z.string().nullable(),
-  "Khu vực hiện tại": external_z_namespaceObject.z.string().nullable(),
-  "Khu vực cư trú": external_z_namespaceObject.z.string().nullable(),
-  "Trải nghiệm quan trọng": external_z_namespaceObject.z.union([ external_z_namespaceObject.z.string(), external_z_namespaceObject.z.array(external_z_namespaceObject.z.string()) ]).optional().nullable(),
-  "Mối quan hệ": external_z_namespaceObject.z.union([ external_z_namespaceObject.z.string(), external_z_namespaceObject.z.array(external_z_namespaceObject.z.string()) ]).optional().nullable()
+  "Giới Tính": external_z_namespaceObject.z.string().nullable(),
+  "Tuổi Tác": external_z_namespaceObject.z.string().nullable(),
+  "Năng Lực Đặc Biệt": external_z_namespaceObject.z.string().nullable(),
+  "Khu Vực Hiện Tại": external_z_namespaceObject.z.string().nullable(),
+  "Khu Vực Sinh Sống": external_z_namespaceObject.z.string().nullable(),
+  "Trải Nghiệm Quan Trọng": external_z_namespaceObject.z.union([ external_z_namespaceObject.z.string(), external_z_namespaceObject.z.array(external_z_namespaceObject.z.string()) ]).optional().nullable(),
+  "Mối Quan Hệ": external_z_namespaceObject.z.union([ external_z_namespaceObject.z.string(), external_z_namespaceObject.z.array(external_z_namespaceObject.z.string()) ]).optional().nullable()
 });
 
 const USER_FIELDS = {
-  name: "Họ tên",
+  name: "Họ Tên",
   identity: "Thân phận",
-  gender: "Giới tính",
-  age: "Tuổi",
-  abilities: "Năng lực đặc biệt",
-  currentLocation: "Khu vực hiện tại",
-  home: "Khu vực cư trú",
+  gender: "Giới Tính",
+  age: "Tuổi Tác",
+  abilities: "Năng Lực Đặc Biệt",
+  currentLocation: "Khu Vực Hiện Tại",
+  home: "Khu Vực Sinh Sống",
   events: "Trải nghiệm quan trọng",
   relationships: "Mối quan hệ"
 };
 
-const getClock = runtime => runtime.clock;
+const getClock = runtime =&gt; runtime.clock;
 
-const getClockFlags = runtime => runtime.clock?.flags;
+const getClockFlags = runtime =&gt; runtime.clock?.flags;
 
-const getMkAnchors = runtime => runtime.clock?.mkAnchors;
+const getMkAnchors = runtime =&gt; runtime.clock?.mkAnchors;
 
-const getCharacterSettings = runtime => runtime.characterSettings;
+const getCharacterSettings = runtime =&gt; runtime.characterSettings;
 
-const getClockFlagValue = (runtime, flagKey) => {
+const getClockFlagValue = (runtime, flagKey) =&gt; {
   const flags = getClockFlags(runtime);
   if (!flags) {
     return false;
@@ -646,7 +646,7 @@ const getClockFlagValue = (runtime, flagKey) => {
   return external_default().get(flags, flagKey) === true;
 };
 
-const getAnchorMkByFlag = (runtime, flagKey) => {
+const getAnchorMkByFlag = (runtime, flagKey) =&gt; {
   const mkAnchors = getMkAnchors(runtime);
   if (!mkAnchors) {
     return null;
@@ -667,52 +667,52 @@ const getAnchorMkByFlag = (runtime, flagKey) => {
   return null;
 };
 
-const getCharacters = stat => stat.chars;
+const getCharacters = stat =&gt; stat.chars;
 
-const getCharacter = (stat, charId) => stat.chars?.[charId];
+const getCharacter = (stat, charId) =&gt; stat.chars?.[charId];
 
-const getCharacterAffection = (stat, charId) => {
+const getCharacterAffection = (stat, charId) =&gt; {
   const char = getCharacter(stat, charId);
   return toFiniteNumber(char?.[CHARACTER_FIELDS.affection]);
 };
 
-const getUser = stat => stat.user;
+const getUser = stat =&gt; stat.user;
 
-const getUserLocation = stat => getUser(stat)?.[USER_FIELDS.currentLocation];
+const getUserLocation = stat =&gt; getUser(stat)?.[USER_FIELDS.currentLocation];
 
-const getCharacterLocation = (stat, charId) => {
+const getCharacterLocation = (stat, charId) =&gt; {
   const char = getCharacter(stat, charId);
   return char?.[CHARACTER_FIELDS.currentLocation];
 };
 
-const getSnapshotUserLocation = snapshot => {
+const getSnapshotUserLocation = snapshot =&gt; {
   const state = snapshot.statWithoutMeta ?? snapshot.stat;
   if (!state) return undefined;
   return getUserLocation(state);
 };
 
-const getSnapshotCharacterLocation = (snapshot, charId) => {
+const getSnapshotCharacterLocation = (snapshot, charId) =&gt; {
   const state = snapshot.statWithoutMeta ?? snapshot.stat;
   if (!state) return undefined;
   return getCharacterLocation(state, charId);
 };
 
-const parseForgettingRule = entry => {
+const parseForgettingRule = entry =&gt; {
   const result = ForgettingRuleSchema.safeParse(entry);
   return result.success ? result.data : null;
 };
 
 const processor_logger = new Logger("GSKO-BASE/core/affection-forgetting-processor/processor");
 
-const hasSharedLocation = (snapshots, charId) => snapshots.some(snapshot => {
+const hasSharedLocation = (snapshots, charId) =&gt; snapshots.some(snapshot =&gt; {
   const userLocation = getSnapshotUserLocation(snapshot);
   const charLocation = getSnapshotCharacterLocation(snapshot, charId);
-  return userLocation && charLocation && userLocation === charLocation;
+  return userLocation &amp;&amp; charLocation &amp;&amp; userLocation === charLocation;
 });
 
-const sumChangeValue = rules => external_default().sumBy(rules, entry => {
+const sumChangeValue = rules =&gt; external_default().sumBy(rules, entry =&gt; {
   const value = toFiniteNumber(entry.rule.decrease);
-  return value && value > 0 ? value : 0;
+  return value &amp;&amp; value &gt; 0 ? value : 0;
 });
 
 async function processAffectionForgettingInternal({stat, runtime, mk, selectedMks}) {
@@ -747,7 +747,7 @@ async function processAffectionForgettingInternal({stat, runtime, mk, selectedMk
       changes
     };
   }
-  const validSelectedMks = new Set((selectedMks ?? []).filter(value => typeof value === "string" && value.length > 0));
+  const validSelectedMks = new Set((selectedMks ?? []).filter(value =&gt; typeof value === "string" &amp;&amp; value.length &gt; 0));
   if (validSelectedMks.size === 0) {
     processor_logger.debug(funcName, "Không có MK hợp lệ nào trong selectedMks, bỏ qua xử lý quên lãng.");
     return {
@@ -762,7 +762,7 @@ async function processAffectionForgettingInternal({stat, runtime, mk, selectedMk
     const affectionValue = getCharacterAffection(stat, charId);
     if (affectionValue == null) continue;
     const stage = pickAffectionStage(affectionValue, settings.affectionStages);
-    const parsedRules = (stage?.forgettingSpeed ?? []).map(parseForgettingRule).filter(rule => Boolean(rule));
+    const parsedRules = (stage?.forgettingSpeed ?? []).map(parseForgettingRule).filter(rule =&gt; Boolean(rule));
     if (parsedRules.length === 0) continue;
     const rules = [];
     for (const rule of parsedRules) {
@@ -773,7 +773,7 @@ async function processAffectionForgettingInternal({stat, runtime, mk, selectedMk
       });
       requiredFlags.add(rule.triggerFlag);
     }
-    if (rules.length > 0) {
+    if (rules.length &gt; 0) {
       activeCharacters.push({
         charId,
         affection: affectionValue,
@@ -819,12 +819,12 @@ async function processAffectionForgettingInternal({stat, runtime, mk, selectedMk
     if (changeValue <= 0) continue;
     let newAffection;
     let operation = "Bất biến";
-    if (affection > 0) {
+    if (affection &gt; 0) {
       newAffection = Math.max(0, affection - changeValue);
       if (newAffection < affection) operation = "Giảm";
     } else if (affection < 0) {
       newAffection = Math.min(0, affection + changeValue);
-      if (newAffection > affection) operation = "Tăng";
+      if (newAffection &gt; affection) operation = "Tăng";
     } else {
       continue;
     }
@@ -833,7 +833,7 @@ async function processAffectionForgettingInternal({stat, runtime, mk, selectedMk
     const char = stat.chars?.[charId];
     if (!char) continue;
     char[CHARACTER_FIELDS.affection] = newAffection;
-    const reason = `Không ở cùng khu vực với người chơi trong khoảng thời gian ${rules.map(item => item.flagKey).join(", ")}, độ hảo cảm hướng về 0, đã ${operation} ${changeValue}`;
+    const reason = `Không ở cùng khu vực với người chơi trong khoảng thời gian ${rules.map(item =&gt; item.flagKey).join(", ")}, độ hảo cảm hướng về 0, đã ${operation} ${changeValue}`;
     const path = `chars.${charId}.${CHARACTER_FIELDS.affection}`;
     changes.push(createChangeLogEntry("affection-forgetting-processor", path, affection, newAffection, reason));
     processor_logger.debug(funcName, "Áp dụng quy tắc quên lãng khiến độ hảo cảm hướng về 0.", {
@@ -842,7 +842,7 @@ async function processAffectionForgettingInternal({stat, runtime, mk, selectedMk
       newAffection,
       changeValue,
       operation,
-      activeFlags: rules.map(item => item.flagKey)
+      activeFlags: rules.map(item =&gt; item.flagKey)
     });
   }
   processor_logger.debug(funcName, "--- Xử lý quên lãng hảo cảm hoàn tất ---");
@@ -884,15 +884,15 @@ function parseEditLogString(logString) {
 }
 
 function getUpdateOps(logJson) {
-  return logJson.filter(op => op.op === "update");
+  return logJson.filter(op =&gt; op.op === "update");
 }
 
 function getInsertOps(logJson) {
-  return logJson.filter(op => op.op === "insert");
+  return logJson.filter(op =&gt; op.op === "insert");
 }
 
 function getDeleteOps(logJson) {
-  return logJson.filter(op => op.op === "delete");
+  return logJson.filter(op =&gt; op.op === "delete");
 }
 
 function flattenObject(obj, path = "") {
@@ -905,7 +905,7 @@ function flattenObject(obj, path = "") {
   for (const key of Object.keys(recordObj)) {
     const newPath = path ? `${path}.${key}` : key;
     const nested = flattenObject(recordObj[key], newPath);
-    nested.forEach((value, p) => flatMap.set(p, value));
+    nested.forEach((value, p) =&gt; flatMap.set(p, value));
   }
   return flatMap;
 }
@@ -915,7 +915,7 @@ function getAtomicChangesFromUpdate(updateOp) {
   const basePath = updateOp.path;
   const oldVal = updateOp.value_old;
   const newVal = updateOp.value_new;
-  if (!external_default().isObject(oldVal) && !external_default().isObject(newVal)) {
+  if (!external_default().isObject(oldVal) &amp;&amp; !external_default().isObject(newVal)) {
     return [ {
       path: basePath,
       oldVal: oldVal ?? null,
@@ -943,10 +943,10 @@ function getAtomicChangesFromUpdate(updateOp) {
 
 function getAllAtomicChanges(logJson) {
   const allChanges = [];
-  getUpdateOps(logJson).forEach(op => {
+  getUpdateOps(logJson).forEach(op =&gt; {
     allChanges.push(...getAtomicChangesFromUpdate(op));
   });
-  getInsertOps(logJson).forEach(op => {
+  getInsertOps(logJson).forEach(op =&gt; {
     const valueToInsert = op.value_new;
     if (valueToInsert === undefined) return;
     if (!_.isObject(valueToInsert)) {
@@ -957,14 +957,14 @@ function getAllAtomicChanges(logJson) {
       });
     } else {
       const newMap = flattenObject(valueToInsert);
-      if (newMap.size === 0 && _.isObject(valueToInsert)) {
+      if (newMap.size === 0 &amp;&amp; _.isObject(valueToInsert)) {
         allChanges.push({
           path: op.path,
           oldVal: null,
           newVal: valueToInsert
         });
       } else {
-        newMap.forEach((vNew, key) => {
+        newMap.forEach((vNew, key) =&gt; {
           allChanges.push({
             path: `${op.path}.${key}`,
             oldVal: null,
@@ -974,7 +974,7 @@ function getAllAtomicChanges(logJson) {
       }
     }
   });
-  getDeleteOps(logJson).forEach(op => {
+  getDeleteOps(logJson).forEach(op =&gt; {
     const valueToDelete = op.value_old;
     if (valueToDelete === undefined) return;
     if (!_.isObject(valueToDelete)) {
@@ -985,14 +985,14 @@ function getAllAtomicChanges(logJson) {
       });
     } else {
       const oldMap = flattenObject(valueToDelete);
-      if (oldMap.size === 0 && _.isObject(valueToDelete)) {
+      if (oldMap.size === 0 &amp;&amp; _.isObject(valueToDelete)) {
         allChanges.push({
           path: op.path,
           oldVal: valueToDelete,
           newVal: null
         });
       } else {
-        oldMap.forEach((vOld, key) => {
+        oldMap.forEach((vOld, key) =&gt; {
           allChanges.push({
             path: `${op.path}.${key}`,
             oldVal: vOld,
@@ -1007,7 +1007,7 @@ function getAllAtomicChanges(logJson) {
 
 function findChangeByPath(logJson, targetPath) {
   const allChanges = getAllAtomicChanges(logJson);
-  for (let i = allChanges.length - 1; i >= 0; i--) {
+  for (let i = allChanges.length - 1; i &gt;= 0; i--) {
     if (allChanges[i].path === targetPath) {
       return allChanges[i];
     }
@@ -1017,7 +1017,7 @@ function findChangeByPath(logJson, targetPath) {
 
 const PATH_RE = new RegExp(`^chars.[^.]+.${CHARACTER_FIELDS.affection}$`);
 
-const isTarget = path => PATH_RE.test(String(path || ""));
+const isTarget = path =&gt; PATH_RE.test(String(path || ""));
 
 function getCurrentAffectionStage(affection, stages) {
   return pickAffectionStage(affection, stages);
@@ -1110,7 +1110,7 @@ function processAffection({stat, editLog, runtime}) {
         if (stages) {
           const currentStage = getCurrentAffectionStage(oldValueNum, stages);
           const limit = currentStage?.affectionGrowthLimit;
-          if (limit && absDelta > limit.max) {
+          if (limit &amp;&amp; absDelta &gt; limit.max) {
             const limitedAbsDelta = Math.max(absDelta / limit.divisor, limit.max);
             finalDelta = limitedAbsDelta * Math.sign(delta);
             internalLogs.push({
@@ -1150,7 +1150,7 @@ function processAffection({stat, editLog, runtime}) {
       }
     }
   }
-  if (changes.length > 0) {
+  if (changes.length &gt; 0) {
     affection_processor_processor_logger.debug(funcName, "Xử lý quy đổi hảo cảm hoàn tất.", {
       summary: `Tổng cộng tạo ra ${changes.length} thay đổi.`,
       internalLogs
@@ -1202,7 +1202,7 @@ const MapLeafSchema = external_z_namespaceObject.z.object({
   aliases: external_z_namespaceObject.z.array(external_z_namespaceObject.z.string()).default([])
 }).passthrough();
 
-const MapTreeSchema = external_z_namespaceObject.z.lazy(() => external_z_namespaceObject.z.record(external_z_namespaceObject.z.string(), external_z_namespaceObject.z.union([ MapLeafSchema, MapTreeSchema ])));
+const MapTreeSchema = external_z_namespaceObject.z.lazy(() =&gt; external_z_namespaceObject.z.record(external_z_namespaceObject.z.string(), external_z_namespaceObject.z.union([ MapLeafSchema, MapTreeSchema ])));
 
 const MapGraphSchema = external_z_namespaceObject.z.object({
   mapSize: MapSizeSchema,
@@ -1215,7 +1215,7 @@ const MapGraphSchema = external_z_namespaceObject.z.object({
 });
 
 const WORLD_DEFAULTS = {
-  fallbackPlace: "Bác Lệ Thần Xã",
+  fallbackPlace: "Đền Hakurei",
   mainStoryTag: "gensokyo"
 };
 
@@ -1245,14 +1245,14 @@ function buildGraph({stat}) {
       };
     }
     graph_builder_logger.debug(funcName, "Lấy stat.world.map_graph thành công");
-    const addEdge = (nodeA, nodeB) => {
+    const addEdge = (nodeA, nodeB) =&gt; {
       if (nodeA === nodeB) return;
       if (!graph[nodeA]) graph[nodeA] = {};
       if (!graph[nodeB]) graph[nodeB] = {};
       graph[nodeA][nodeB] = true;
       graph[nodeB][nodeA] = true;
     };
-    const walkTree = node => {
+    const walkTree = node =&gt; {
       for (const key in node) {
         const child = node[key];
         const parseResult = MapLeafSchema.safeParse(child);
@@ -1265,13 +1265,13 @@ function buildGraph({stat}) {
             });
             seenNodes.add(key);
           }
-        } else if (child && typeof child === "object") {
+        } else if (child &amp;&amp; typeof child === "object") {
           walkTree(child);
         }
       }
     };
     walkTree(mapData.tree);
-    leafNodes.forEach(leaf => {
+    leafNodes.forEach(leaf =&gt; {
       if (!graph[leaf.name]) {
         graph[leaf.name] = {};
       }
@@ -1279,8 +1279,8 @@ function buildGraph({stat}) {
     const edges = mapData.edges ?? [];
     graph_builder_logger.debug(funcName, "Các edges được trích xuất từ mapData:", edges);
     if (Array.isArray(edges)) {
-      edges.forEach(edge => {
-        if (edge && edge.a && edge.b) {
+      edges.forEach(edge =&gt; {
+        if (edge &amp;&amp; edge.a &amp;&amp; edge.b) {
           addEdge(edge.a, edge.b);
         }
       });
@@ -1327,11 +1327,11 @@ function extractContentForMatching(messages, options = {}) {
     if (messageContent === null) {
       continue;
     }
-    if (excludeBodyTags.length > 0) {
+    if (excludeBodyTags.length &gt; 0) {
       for (const tagName of excludeBodyTags) {
         const safeTagName = escReg(tagName);
-        const containerRe = new RegExp(`<${safeTagName}\\b[^>]*>((?:(?!<${safeTagName}\\b)[\\s\\S])*?)</${safeTagName}>`, "gi");
-        const selfClosingRe = new RegExp(`<${safeTagName}\\b[^>]*/>`, "gi");
+        const containerRe = new RegExp(`<${safeTagName}\\b[^&gt;]*&gt;((?:(?!<${safeTagName}\\b)[\\s\\S])*?)</${safeTagName}&gt;`, "gi");
+        const selfClosingRe = new RegExp(`<${safeTagName}\\b[^&gt;]*/&gt;`, "gi");
         let oldContent;
         do {
           oldContent = messageContent;
@@ -1344,17 +1344,17 @@ function extractContentForMatching(messages, options = {}) {
       segs.push(messageContent);
       continue;
     }
-    if (mainBodyTags.length > 0) {
+    if (mainBodyTags.length &gt; 0) {
       const mainBodySegs = [];
       for (const tagName of mainBodyTags) {
         const safeTagName = escReg(tagName);
-        const extractRe = new RegExp(`<${safeTagName}\\b[^>]*>((?:(?!<${safeTagName}\\b)[\\s\\S])*?)</${safeTagName}>`, "gi");
+        const extractRe = new RegExp(`<${safeTagName}\\b[^&gt;]*&gt;((?:(?!<${safeTagName}\\b)[\\s\\S])*?)</${safeTagName}&gt;`, "gi");
         let match;
         while ((match = extractRe.exec(messageContent)) !== null) {
           mainBodySegs.push(match[1].trim());
         }
       }
-      if (mainBodySegs.length > 0) {
+      if (mainBodySegs.length &gt; 0) {
         segs.push(mainBodySegs.join("\n"));
       }
     } else {
@@ -1433,7 +1433,7 @@ async function loadLocations({stat, legalLocations, neighbors}) {
       location_loader_logger.debug(funcName, "Danh sách địa điểm hợp lệ trống, trực tiếp trả về mảng rỗng.");
       return [];
     }
-    const legalLocationNames = legalLocations.map(loc => loc.name);
+    const legalLocationNames = legalLocations.map(loc =&gt; loc.name);
     const {mainBodyTags, excludeBodyTags} = stat.config;
     const matched = await matchMessages(legalLocationNames, {
       depth: 5,
@@ -1445,15 +1445,15 @@ async function loadLocations({stat, legalLocations, neighbors}) {
     const userLoc = stat.user?.[USER_FIELDS.currentLocation]?.trim() ?? "";
     if (userLoc) {
       location_loader_logger.debug(funcName, `Lấy được vị trí hiện tại của người dùng: ${userLoc}`);
-      if (!hits.includes(userLoc) && legalLocationNames.includes(userLoc)) {
+      if (!hits.includes(userLoc) &amp;&amp; legalLocationNames.includes(userLoc)) {
         hits.push(userLoc);
       }
     } else {
       location_loader_logger.debug(funcName, "Không có dữ liệu vị trí hiện tại trong stat.user.");
     }
-    if (neighbors && neighbors.length > 0) {
+    if (neighbors &amp;&amp; neighbors.length &gt; 0) {
       for (const neighbor of neighbors) {
-        if (!hits.includes(neighbor) && legalLocationNames.includes(neighbor)) {
+        if (!hits.includes(neighbor) &amp;&amp; legalLocationNames.includes(neighbor)) {
           hits.push(neighbor);
         }
       }
@@ -1514,7 +1514,7 @@ function bfs(source, destination, graph) {
   const steps = [];
   let currentNode = destination;
   let guard = 0;
-  while (previousNode[currentNode] != null && guard < 1e3) {
+  while (previousNode[currentNode] != null &amp;&amp; guard < 1e3) {
     steps.push({
       from: previousNode[currentNode],
       to: currentNode
@@ -1522,7 +1522,7 @@ function bfs(source, destination, graph) {
     currentNode = previousNode[currentNode];
     guard++;
   }
-  if (guard >= 1e3) {
+  if (guard &gt;= 1e3) {
     utils_logger.error(funcName, `Rơi vào vòng lặp vô tận khi truy vết ngược đường đi BFS, destination=${destination}`);
     return null;
   }
@@ -1653,7 +1653,7 @@ function processCharacterLocations({stat, runtime}) {
     const playerLocation = String(character_locations_processor_getUserLocation(stat) ?? "").trim() || null;
     const npcByLocation = {};
     const chars = getChars(stat);
-    Object.entries(chars).forEach(([charId, charObj]) => {
+    Object.entries(chars).forEach(([charId, charObj]) =&gt; {
       const key = String(getCharLocation(charObj) ?? "").trim() || "Chưa biết";
       if (!npcByLocation[key]) npcByLocation[key] = [];
       npcByLocation[key].push(charId);
@@ -1700,7 +1700,7 @@ function processCharacterLogs(runtime) {
     return runtime;
   }
   const mkToIndexMap = new Map;
-  snapshots.forEach((snapshot, index) => {
+  snapshots.forEach((snapshot, index) =&gt; {
     mkToIndexMap.set(snapshot.mk, index);
   });
   character_log_processor_processor_logger.debug(funcName, "Tạo mkToIndexMap hoàn tất.", {
@@ -1735,10 +1735,10 @@ function processCharacterLogs(runtime) {
         for (const charName in stat.chars) {
           if (Object.prototype.hasOwnProperty.call(stat.chars, charName)) {
             const charData = stat.chars[charName];
-            const location = charData["Khu vực hiện tại"];
-            const target = charData["Mục tiêu"];
+            const location = charData["Khu Vực Hiện Tại"];
+            const target = charData["Mục Tiêu"];
             const clockAck = cache.time.clockAck;
-            if (location && target) {
+            if (location &amp;&amp; target) {
               if (!flagLog[charName]) {
                 flagLog[charName] = [];
                 character_log_processor_processor_logger.debug(funcName, `Khởi tạo mảng nhật ký cho nhân vật "${charName}".`);
@@ -1835,11 +1835,11 @@ function getCharLocationPath(charId) {
 }
 
 function getCharGoal(stat, charId) {
-  return getChar(stat, charId)?.["Mục tiêu"] ?? "";
+  return getChar(stat, charId)?.["Mục Tiêu"] ?? "";
 }
 
 function getCharGoalPath(charId) {
-  return `chars.${charId}.Mục tiêu`;
+  return `chars.${charId}.Mục Tiêu`;
 }
 
 function getCharName(stat, charId) {
@@ -1851,7 +1851,7 @@ function setCharLocationInStat(stat, charId, location) {
 }
 
 function setCharGoalInStat(stat, charId, goal) {
-  stat.chars[charId]["Mục tiêu"] = goal;
+  stat.chars[charId]["Mục Tiêu"] = goal;
 }
 
 function ensureCharacterRuntime(runtime, charId) {
@@ -1948,23 +1948,23 @@ function setVisitCooling(cache, charId, cooling) {
   charCache.visit.cooling = cooling;
 }
 
-const CHAR_RUNTIME_PATH = charId => `character.chars.${charId}`;
+const CHAR_RUNTIME_PATH = charId =&gt; `character.chars.${charId}`;
 
-const AFFECTION_STAGE_IN_RUNTIME_PATH = charId => `${CHAR_RUNTIME_PATH(charId)}.affectionStage`;
+const AFFECTION_STAGE_IN_RUNTIME_PATH = charId =&gt; `${CHAR_RUNTIME_PATH(charId)}.affectionStage`;
 
-const DECISION_IN_RUNTIME_PATH = charId => `${CHAR_RUNTIME_PATH(charId)}.decision`;
+const DECISION_IN_RUNTIME_PATH = charId =&gt; `${CHAR_RUNTIME_PATH(charId)}.decision`;
 
-const COMPANION_DECISION_IN_RUNTIME_PATH = charId => `${CHAR_RUNTIME_PATH(charId)}.companionDecision`;
+const COMPANION_DECISION_IN_RUNTIME_PATH = charId =&gt; `${CHAR_RUNTIME_PATH(charId)}.companionDecision`;
 
 const CHAR_PARTITIONS_IN_RUNTIME_PATH = "character.partitions";
 
-const CO_LOCATED_CHARS_IN_RUNTIME_PATH = null && `${CHAR_PARTITIONS_IN_RUNTIME_PATH}.coLocated`;
+const CO_LOCATED_CHARS_IN_RUNTIME_PATH = null &amp;&amp; `${CHAR_PARTITIONS_IN_RUNTIME_PATH}.coLocated`;
 
-const REMOTE_CHARS_IN_RUNTIME_PATH = null && `${CHAR_PARTITIONS_IN_RUNTIME_PATH}.remote`;
+const REMOTE_CHARS_IN_RUNTIME_PATH = null &amp;&amp; `${CHAR_PARTITIONS_IN_RUNTIME_PATH}.remote`;
 
 const MODULE_CACHE_ROOT = "character-processor";
 
-const VISIT_COOLING_PATH = charId => `${charId}.visit.cooling`;
+const VISIT_COOLING_PATH = charId =&gt; `${charId}.visit.cooling`;
 
 const PREDEFINED_ACTIONS = {
   VISIT_HERO: {
@@ -1996,7 +1996,7 @@ const aggregator_logger = new Logger("GSKO-BASE/core/character-processor/aggrega
 function getCharHomeOrFallback(stat, charId) {
   const char = getChar(stat, charId);
   const homeLocation = char?.[CHARACTER_FIELDS.home];
-  if (typeof homeLocation === "string" && homeLocation.trim() !== "") {
+  if (typeof homeLocation === "string" &amp;&amp; homeLocation.trim() !== "") {
     return homeLocation;
   }
   return accessors_getUserLocation(stat);
@@ -2005,9 +2005,9 @@ function getCharHomeOrFallback(stat, charId) {
 function resolveTargetLocation(charId, to, stat, runtime) {
   if (to === "RANDOM") {
     const legalLocations = runtime.area?.legal_locations;
-    if (legalLocations && legalLocations.length > 0) {
+    if (legalLocations &amp;&amp; legalLocations.length &gt; 0) {
       const sampled = external_default().sample(legalLocations);
-      if (sampled && typeof sampled.name === "string") {
+      if (sampled &amp;&amp; typeof sampled.name === "string") {
         return sampled.name;
       }
     }
@@ -2029,7 +2029,7 @@ function applyNonCompanionDecisions({stat, runtime, cache, nonCompanionDecisions
   const funcName = "applyNonCompanionDecisions";
   const changes = [];
   const moduleName = "character-processor";
-  external_default().forEach(nonCompanionDecisions, (decision, charId) => {
+  external_default().forEach(nonCompanionDecisions, (decision, charId) =&gt; {
     aggregator_logger.debug(funcName, `Bắt đầu áp dụng quyết định của nhân vật ${charId}: [${decision.do}]`);
     const oldLocation = accessors_getCharLocation(stat, charId);
     const newLocation = resolveTargetLocation(charId, decision.to, stat, runtime);
@@ -2042,7 +2042,7 @@ function applyNonCompanionDecisions({stat, runtime, cache, nonCompanionDecisions
         newValue: newLocation,
         reason: `Nhân vật ${charId} di chuyển vị trí dựa trên quyết định "${decision.do}".`
       });
-      aggregator_logger.debug(funcName, `[STAT] Nhân vật ${charId}: Vị trí -> [${newLocation}]`);
+      aggregator_logger.debug(funcName, `[STAT] Nhân vật ${charId}: Vị trí -&gt; [${newLocation}]`);
     }
     const oldGoal = getCharGoal(stat, charId);
     const newGoal = decision.do;
@@ -2055,7 +2055,7 @@ function applyNonCompanionDecisions({stat, runtime, cache, nonCompanionDecisions
         newValue: newGoal,
         reason: `Nhân vật ${charId} cập nhật mục tiêu dựa trên quyết định.`
       });
-      aggregator_logger.debug(funcName, `[STAT] Nhân vật ${charId}: Mục tiêu -> [${newGoal}]`);
+      aggregator_logger.debug(funcName, `[STAT] Nhân vật ${charId}: Mục Tiêu -&gt; [${newGoal}]`);
     }
     setDecisionInRuntime(runtime, charId, decision);
     aggregator_logger.debug(funcName, `[RUNTIME] Nhân vật ${charId}: Đã ghi lại quyết định.`);
@@ -2069,7 +2069,7 @@ function applyNonCompanionDecisions({stat, runtime, cache, nonCompanionDecisions
 
 function applyCompanionDecisions({runtime, companionDecisions}) {
   const funcName = "applyCompanionDecisions";
-  external_default().forEach(companionDecisions, (decision, charId) => {
+  external_default().forEach(companionDecisions, (decision, charId) =&gt; {
     aggregator_logger.debug(funcName, `Bắt đầu áp dụng quyết định đồng hành của nhân vật ${charId}: [${decision.do}]`);
     setCompanionDecisionInRuntime(runtime, charId, decision);
     aggregator_logger.debug(funcName, `[RUNTIME] Nhân vật ${charId}: Đã ghi lại quyết định đồng hành.`);
@@ -2129,8 +2129,8 @@ function areConditionsMet(entry, {runtime}) {
   };
   const reasons = [];
   if (when.byFlag) {
-    const metFlags = when.byFlag.filter(flagPath => external_default().get(clock.flags, flagPath) === true);
-    if (metFlags.length > 0) {
+    const metFlags = when.byFlag.filter(flagPath =&gt; external_default().get(clock.flags, flagPath) === true);
+    if (metFlags.length &gt; 0) {
       reasons.push(`Thỏa mãn Flag: [${metFlags.join(", ")}]`);
     } else {
       return {
@@ -2151,7 +2151,7 @@ function areConditionsMet(entry, {runtime}) {
   }
   if (when.byMonthDay) {
     const {month, day} = clock.now;
-    if (month === when.byMonthDay.month && day === when.byMonthDay.day) {
+    if (month === when.byMonthDay.month &amp;&amp; day === when.byMonthDay.day) {
       reasons.push(`Thỏa mãn ngày: Ngày ${day} tháng ${month}`);
     } else {
       return {
@@ -2181,7 +2181,7 @@ function areConditionsMet(entry, {runtime}) {
         };
       }
     } else if (external_default().isArray(when.byFestival)) {
-      if (currentFestival && when.byFestival.includes(currentFestival)) {
+      if (currentFestival &amp;&amp; when.byFestival.includes(currentFestival)) {
         reasons.push(`Thỏa mãn điều kiện lễ hội: Lễ hội hiện tại [${currentFestival}] nằm trong danh sách chỉ định.`);
       } else {
         return {
@@ -2207,10 +2207,10 @@ function chooseAction(charId, char, {runtime, stat}) {
   const funcName = "chooseAction";
   const specials = char.specials || [];
   action_processor_logger.debug(funcName, `Nhân vật ${charId}: Bắt đầu kiểm tra ${specials.length} hành động đặc biệt...`);
-  const metSpecials = specials.map((entry, index) => ({
+  const metSpecials = specials.map((entry, index) =&gt; ({
     ...entry,
     originalIndex: index
-  })).filter(entry => {
+  })).filter(entry =&gt; {
     const {met, reason} = areConditionsMet(entry, {
       runtime
     });
@@ -2219,7 +2219,7 @@ function chooseAction(charId, char, {runtime, stat}) {
     }
     return met;
   });
-  if (metSpecials.length > 0) {
+  if (metSpecials.length &gt; 0) {
     const highestPrioritySpecial = external_default().maxBy(metSpecials, ENTRY_KEYS.PRIORITY);
     if (highestPrioritySpecial) {
       action_processor_logger.debug(funcName, `Nhân vật ${charId}: Đã chọn hành động đặc biệt có độ ưu tiên cao nhất [${highestPrioritySpecial.action.do}] (P=${highestPrioritySpecial.priority}).`);
@@ -2277,7 +2277,7 @@ const companion_processor_logger = new Logger("GSKO-BASE/core/character-processo
 function isPatienceWindowHit(patienceUnit, flags) {
   switch (patienceUnit) {
    case "period":
-    return flags.newPeriod === true || Object.values(flags.byPeriod).some(v => v === true);
+    return flags.newPeriod === true || Object.values(flags.byPeriod).some(v =&gt; v === true);
 
    case "day":
     return flags.newDay === true;
@@ -2353,7 +2353,7 @@ function makeVisitDecisions({runtime, stat, cache, remoteChars}) {
       continue;
     }
     const {probBase = 0, probK = 0} = affectionStage.visit;
-    const {passed, finalProb} = checkProbability(probBase, probK, char["Hảo cảm"]);
+    const {passed, finalProb} = checkProbability(probBase, probK, char["Độ Hảo Cảm"]);
     if (passed) {
       potentialVisitors.push(charId);
       visit_processor_logger.debug(funcName, `Nhân vật ${charId} vượt qua kiểm tra xác suất (P=${finalProb.toFixed(2)}), trở thành người bái phỏng tiềm năng.`);
@@ -2361,8 +2361,8 @@ function makeVisitDecisions({runtime, stat, cache, remoteChars}) {
       visit_processor_logger.debug(funcName, `Nhân vật ${charId} không vượt qua kiểm tra xác suất (P=${finalProb.toFixed(2)}), không tiến hành bái phỏng.`);
     }
   }
-  const visitors = potentialVisitors.length > 2 ? external_default().sampleSize(potentialVisitors, 2) : potentialVisitors;
-  if (potentialVisitors.length > 2) {
+  const visitors = potentialVisitors.length &gt; 2 ? external_default().sampleSize(potentialVisitors, 2) : potentialVisitors;
+  if (potentialVisitors.length &gt; 2) {
     visit_processor_logger.debug(funcName, `Có ${potentialVisitors.length} người muốn bái phỏng, chọn ngẫu nhiên 2 người: ${visitors.join(", ")}`);
   }
   for (const charId of visitors) {
@@ -2446,8 +2446,8 @@ function getAffectionStage(char, affectionStages) {
   if (!affectionStages || !Array.isArray(affectionStages)) {
     return null;
   }
-  const parsedStages = affectionStages.map(stage => typeof stage === "string" ? JSON.parse(stage) : stage);
-  const applicableStages = parsedStages.filter(stage => char["Hảo cảm"] >= stage.threshold);
+  const parsedStages = affectionStages.map(stage =&gt; typeof stage === "string" ? JSON.parse(stage) : stage);
+  const applicableStages = parsedStages.filter(stage =&gt; char["Độ Hảo Cảm"] &gt;= stage.threshold);
   if (applicableStages.length === 0) {
     return null;
   }
@@ -2460,7 +2460,7 @@ function isCooldownResetTriggered(coolUnit, flags) {
   if (!coolUnit || !flags) return false;
   switch (coolUnit) {
    case "period":
-    return flags.newPeriod === true || Object.values(flags.byPeriod || {}).some(v => v === true);
+    return flags.newPeriod === true || Object.values(flags.byPeriod || {}).some(v =&gt; v === true);
 
    case "day":
     return flags.newDay === true;
@@ -2502,15 +2502,15 @@ function preprocess({runtime, stat, cache}) {
       const affectionStage = getAffectionStage(char, charAffectionStages);
       if (affectionStage) {
         setAffectionStageInRuntime(newRuntime, charId, affectionStage);
-        preprocessor_logger.debug(funcName, `Nhân vật ${charId} (Hảo cảm: ${char["Hảo cảm"]}) phân tích được cấp độ hảo cảm: [${affectionStage.name}]`);
+        preprocessor_logger.debug(funcName, `Nhân vật ${charId} (Độ Hảo Cảm: ${char["Độ Hảo Cảm"]}) phân tích được cấp độ hảo cảm: [${affectionStage.name}]`);
       } else {
-        preprocessor_logger.debug(funcName, `Nhân vật ${charId} (Hảo cảm: ${char["Hảo cảm"]}) không phân tích được bất kỳ cấp độ hảo cảm nào.`);
+        preprocessor_logger.debug(funcName, `Nhân vật ${charId} (Độ Hảo Cảm: ${char["Độ Hảo Cảm"]}) không phân tích được bất kỳ cấp độ hảo cảm nào.`);
         continue;
       }
       const coolUnit = affectionStage.visit?.coolUnit;
       const cooling = isVisitCooling(newCache, charId);
       const triggered = isCooldownResetTriggered(coolUnit, newRuntime.clock?.flags);
-      if (cooling && triggered) {
+      if (cooling &amp;&amp; triggered) {
         setVisitCooling(newCache, charId, false);
         preprocessor_logger.debug(funcName, `Thời gian hồi bái phỏng của nhân vật ${charId} đã được đặt lại tại nhịp ${coolUnit}.`);
       } else if (cooling) {
@@ -2617,7 +2617,7 @@ function getGlobalRoutine(stat) {
 
 function accessors_getCharAffectionStages(stat, charId) {
   const charStages = stat.chars?.[charId]?.affectionStages;
-  if (charStages && charStages.length > 0) {
+  if (charStages &amp;&amp; charStages.length &gt; 0) {
     return charStages;
   }
   return accessors_getGlobalAffectionStages(stat);
@@ -2625,7 +2625,7 @@ function accessors_getCharAffectionStages(stat, charId) {
 
 function getCharSpecials(stat, charId) {
   const charSpecials = stat.chars?.[charId]?.specials;
-  if (charSpecials && charSpecials.length > 0) {
+  if (charSpecials &amp;&amp; charSpecials.length &gt; 0) {
     return charSpecials;
   }
   return getGlobalSpecials(stat);
@@ -2633,7 +2633,7 @@ function getCharSpecials(stat, charId) {
 
 function getCharRoutine(stat, charId) {
   const charRoutine = stat.chars?.[charId]?.routine;
-  if (charRoutine && charRoutine.length > 0) {
+  if (charRoutine &amp;&amp; charRoutine.length &gt; 0) {
     return charRoutine;
   }
   return getGlobalRoutine(stat);
@@ -2717,10 +2717,10 @@ const AyaNewsSchema = external_z_namespaceObject.z.object({
 });
 
 const IncidentDetailSchema = external_z_namespaceObject.z.object({
-  "Chi tiết dị biến": external_z_namespaceObject.z.string(),
-  "Khu vực chính": external_z_namespaceObject.z.array(external_z_namespaceObject.z.string()),
-  "Người giải quyết dị biến": external_z_namespaceObject.z.union([ external_z_namespaceObject.z.string(), external_z_namespaceObject.z.array(external_z_namespaceObject.z.string()) ]).optional(),
-  "Dị biến đã kết thúc": external_z_namespaceObject.z.boolean()
+  "Chi Tiết Dị Biến": external_z_namespaceObject.z.string(),
+  "Khu Vực Chính": external_z_namespaceObject.z.array(external_z_namespaceObject.z.string()),
+  "Người Giải Quyết Dị Biến": external_z_namespaceObject.z.union([ external_z_namespaceObject.z.string(), external_z_namespaceObject.z.array(external_z_namespaceObject.z.string()) ]).optional(),
+  "Dị Biến Kết Thúc": external_z_namespaceObject.z.boolean()
 });
 
 const IncidentsSchema = external_z_namespaceObject.z.record(external_z_namespaceObject.z.string(), IncidentDetailSchema);
@@ -2880,7 +2880,7 @@ async function setRuntimeObject(runtimeObject, options) {
     runtime_logger.debug(funcName, `Đang ghi vào chat.runtime (chế độ: ${mode})`, {
       runtimeObject
     });
-    await updateVariablesWith(vars => {
+    await updateVariablesWith(vars =&gt; {
       const chatVars = vars || {};
       if (mode === "replace") {
         chatVars.runtime = runtimeObject;
@@ -2967,7 +2967,7 @@ function processFestival({runtime, stat}) {
     let todayFest = null;
     for (const festId in festivalList) {
       const fest = festivalList[festId];
-      if (fest.month === currentMonth && fest.start_day <= currentDay && currentDay <= fest.end_day) {
+      if (fest.month === currentMonth &amp;&amp; fest.start_day <= currentDay &amp;&amp; currentDay <= fest.end_day) {
         todayFest = fest;
         break;
       }
@@ -2983,14 +2983,14 @@ function processFestival({runtime, stat}) {
       if (normalizedGap === 0) {
         continue;
       }
-      if (normalizedGap > 0 && normalizedGap < minDayGap) {
+      if (normalizedGap &gt; 0 &amp;&amp; normalizedGap < minDayGap) {
         minDayGap = normalizedGap;
         nextFest = fest;
       }
     }
     const festivalInfo = {
       ongoing: !!todayFest,
-      upcoming: !!(nextFest && minDayGap <= 3),
+      upcoming: !!(nextFest &amp;&amp; minDayGap <= 3),
       current: todayFest ? {
         name: todayFest.name,
         host: todayFest.host ?? "",
@@ -2999,7 +2999,7 @@ function processFestival({runtime, stat}) {
         start_day: todayFest.start_day,
         end_day: todayFest.end_day
       } : null,
-      next: nextFest && minDayGap <= 3 ? {
+      next: nextFest &amp;&amp; minDayGap <= 3 ? {
         name: nextFest.name,
         host: nextFest.host ?? "",
         customs: nextFest.customs?.slice(0, 6) ?? [],
@@ -3079,7 +3079,7 @@ function getTimeProgress(stat) {
 }
 
 function getLegalLocations(runtime) {
-  return runtime.area?.legal_locations?.map(location => location.name) ?? [ "Bác Lệ Thần Xã" ];
+  return runtime.area?.legal_locations?.map(location =&gt; location.name) ?? [ "Đền Hakurei" ];
 }
 
 function getIncidentCache(cache) {
@@ -3092,7 +3092,7 @@ function setIncidentCache(cache, incidentCache) {
   cache.incident = incidentCache;
 }
 
-const strip = inputString => {
+const strip = inputString =&gt; {
   try {
     const match = String(inputString || "").match(/^\s*```(?:json)?\s*([\s\S]*?)\s*```/i);
     return match ? match[1] : String(inputString || "");
@@ -3101,9 +3101,9 @@ const strip = inputString => {
   }
 };
 
-const asArray = value => Array.isArray(value) ? value.map(item => String(item)) : value == null || value === "" ? [] : [ String(value) ];
+const asArray = value =&gt; Array.isArray(value) ? value.map(item =&gt; String(item)) : value == null || value === "" ? [] : [ String(value) ];
 
-const pick = array => Array.isArray(array) && array.length ? array[Math.floor(Math.random() * array.length)] : undefined;
+const pick = array =&gt; Array.isArray(array) &amp;&amp; array.length ? array[Math.floor(Math.random() * array.length)] : undefined;
 
 const incident_processor_processor_logger = new Logger("GSKO-BASE/core/incident-processor/processor");
 
@@ -3111,12 +3111,12 @@ function getCurrentIncident(stat) {
   const allIncidents = getIncidents(stat);
   for (const name in allIncidents) {
     const incident = allIncidents[name];
-    if (incident && !incident["Dị biến đã kết thúc"]) {
+    if (incident &amp;&amp; !incident["Dị Biến Kết Thúc"]) {
       return {
         name,
-        detail: incident["Chi tiết dị biến"],
+        detail: incident["Chi Tiết Dị Biến"],
         solver: asArray(incident["Người giải quyết dị biến"]),
-        mainLoc: incident["Khu vực chính"],
+        mainLoc: incident["Khu Vực Chính"],
         isFinished: false,
         raw: incident
       };
@@ -3129,37 +3129,37 @@ function getAvailableIncidents(stat, config) {
   const {pool} = config;
   const allIncidents = getIncidents(stat);
   const existingNames = new Set(Object.keys(allIncidents));
-  return (pool ?? []).map(item => {
+  return (pool ?? []).map(item =&gt; {
     const detail = {
-      "Chi tiết dị biến": item.detail,
-      "Khu vực chính": asArray(item.mainLoc),
-      "Dị biến đã kết thúc": false
+      "Chi Tiết Dị Biến": item.detail,
+      "Khu Vực Chính": asArray(item.mainLoc),
+      "Dị Biến Kết Thúc": false
     };
     return {
       name: item.name,
-      detail: detail["Chi tiết dị biến"],
-      mainLoc: detail["Khu vực chính"],
+      detail: detail["Chi Tiết Dị Biến"],
+      mainLoc: detail["Khu Vực Chính"],
       solver: [],
       isFinished: false,
       raw: detail
     };
-  }).filter(item => item.name && !existingNames.has(item.name));
+  }).filter(item =&gt; item.name &amp;&amp; !existingNames.has(item.name));
 }
 
 function spawnRandomIncident(runtime, config) {
   const {randomCore, randomType} = config;
   const legalLocations = getLegalLocations(runtime);
-  const baseLocation = pick(legalLocations || []) || "Bác Lệ Thần Xã";
+  const baseLocation = pick(legalLocations || []) || "Đền Hakurei";
   const newIncidentName = `${baseLocation}${pick(randomCore || [])}${pick(randomType || [])}Dị biến`;
   const detail = {
-    "Chi tiết dị biến": "",
-    "Khu vực chính": [ baseLocation ],
-    "Dị biến đã kết thúc": false
+    "Chi Tiết Dị Biến": "",
+    "Khu Vực Chính": [ baseLocation ],
+    "Dị Biến Kết Thúc": false
   };
   return {
     name: newIncidentName,
-    detail: detail["Chi tiết dị biến"],
-    mainLoc: detail["Khu vực chính"],
+    detail: detail["Chi Tiết Dị Biến"],
+    mainLoc: detail["Khu Vực Chính"],
     solver: [],
     isFinished: false,
     raw: detail
@@ -3207,7 +3207,7 @@ function shouldTriggerNewIncident(stat, cache, config) {
 function getContinueDecision(stat, config) {
   const currentIncident = getCurrentIncident(stat);
   const {pool} = config;
-  const poolEntry = (pool ?? []).find(item => item.name === currentIncident.name);
+  const poolEntry = (pool ?? []).find(item =&gt; item.name === currentIncident.name);
   currentIncident.detail = poolEntry?.detail || currentIncident.detail;
   incident_processor_processor_logger.debug("getContinueDecision", `Tiếp tục đẩy nhanh dị biến《${currentIncident.name}》，Địa điểm:`, currentIncident.mainLoc);
   return {
@@ -3228,14 +3228,14 @@ function getStartNewDecision(runtime, stat, config) {
     newIncident = spawnRandomIncident(runtime, config);
   }
   if (newIncident.mainLoc.length === 0) {
-    newIncident.mainLoc = [ "Bác Lệ Thần Xã" ];
+    newIncident.mainLoc = [ "Đền Hakurei" ];
   }
   incident_processor_processor_logger.debug("getStartNewDecision", `Kích hoạt dị biến mới《${newIncident.name}》，Địa điểm:`, newIncident.mainLoc);
   const path = `incidents.${newIncident.name}`;
   const newValue = {
-    "Chi tiết dị biến": newIncident.detail,
-    "Khu vực chính": newIncident.mainLoc,
-    "Dị biến đã kết thúc": false
+    "Chi Tiết Dị Biến": newIncident.detail,
+    "Khu Vực Chính": newIncident.mainLoc,
+    "Dị Biến Kết Thúc": false
   };
   const oldValue = getIncidents(stat)[newIncident.name];
   setIncidents(stat, {
@@ -3389,9 +3389,9 @@ async function mentionedCharacterProcessor({runtime, stat}) {
       mainBodyTags,
       excludeBodyTags
     });
-    if (matchedNames.length > 0) {
+    if (matchedNames.length &gt; 0) {
       mentioned_character_processor_logger.debug(funcName, `Tên nhân vật khớp trong tin nhắn: ${JSON.stringify(matchedNames)}`);
-      const ids = matchedNames.map(name => charNameIdMap.get(name)).filter(id => !!id);
+      const ids = matchedNames.map(name =&gt; charNameIdMap.get(name)).filter(id =&gt; !!id);
       mentionedCharIds = external_default().uniq(ids);
     }
     mentioned_character_processor_logger.debug(funcName, `ID nhân vật cuối cùng được nhận dạng: ${JSON.stringify(mentionedCharIds)}`);
@@ -3412,7 +3412,7 @@ function normalizeLocationData({originalStat, runtime}) {
   const changeLog = [];
   try {
     const legalLocationsData = runtime?.area?.legal_locations ?? [];
-    const legalLocations = new Set(legalLocationsData.map(loc => loc.name.trim()).filter(Boolean));
+    const legalLocations = new Set(legalLocationsData.map(loc =&gt; loc.name.trim()).filter(Boolean));
     const aliasToLegalName = new Map;
     for (const location of legalLocationsData) {
       const canonicalName = location.name?.trim();
@@ -3435,7 +3435,7 @@ function normalizeLocationData({originalStat, runtime}) {
       };
     }
     const fallbackLocation = stat.world?.fallbackPlace ?? WORLD_DEFAULTS.fallbackPlace;
-    const normalize = (rawLocation, defaultLocation, options) => {
+    const normalize = (rawLocation, defaultLocation, options) =&gt; {
       const {keepOnInvalid = false} = options || {};
       const locationString = String(Array.isArray(rawLocation) ? rawLocation[0] || "" : rawLocation || "").trim();
       if (!locationString) {
@@ -3544,7 +3544,7 @@ function formatNewsEntry(entry) {
   const time = formatTime(entry.clockAck);
   const location = entry.location;
   const ayaTarget = `Aya đang ${entry.target}`;
-  const otherChars = entry.otherCharacters.length > 0 ? "đã gặp gỡ：" + entry.otherCharacters.map(char => `${char.name}(${char.target})`).join("、") : "không gặp ai khác";
+  const otherChars = entry.otherCharacters.length &gt; 0 ? "đã gặp gỡ：" + entry.otherCharacters.map(char =&gt; `${char.name}(${char.target})`).join("、") : "không gặp ai khác";
   return `${time}；tại【${location}】；${ayaTarget}；${otherChars}。`;
 }
 
@@ -3587,10 +3587,10 @@ function buildCharacterMovementPrompt({runtime, stat}) {
     const {from, to, do: action} = decision;
     if (!from || !to || from === to) continue;
     const charName = getCharName(stat, charId);
-    if (to === playerLocation && from !== playerLocation) {
+    if (to === playerLocation &amp;&amp; from !== playerLocation) {
       prompts.push(`[${charName} **đã** từ ${from} đến đây, với mục đích là ${action}]`);
     }
-    if (from === playerLocation && to !== playerLocation) {
+    if (from === playerLocation &amp;&amp; to !== playerLocation) {
       prompts.push(`[${charName} **đã** rời khỏi đây để đi tới ${to}, với mục đích là ${action}]`);
     }
   }
@@ -3607,7 +3607,7 @@ function buildCoLocatedCharactersPrompt({stat, runtime}) {
     return "";
   }
   const charactersInfo = {};
-  external_default().forEach(coLocatedCharIds, charId => {
+  external_default().forEach(coLocatedCharIds, charId =&gt; {
     const charData = stat.chars[charId];
     if (!charData) {
       co_located_characters_logger.warn(funcName, `Không tìm thấy dữ liệu nhân vật cùng khu vực ${charId} trong stat.chars.`);
@@ -3616,9 +3616,9 @@ function buildCoLocatedCharactersPrompt({stat, runtime}) {
     charactersInfo[charId] = {
       name: charData.name,
       "Độ hảo cảm": charData["Độ hảo cảm"],
-      "Khu vực hiện tại": charData["Khu vực hiện tại"],
+      "Khu Vực Hiện Tại": charData["Khu Vực Hiện Tại"],
       "Khu vực sinh sống": charData["Khu vực sinh sống"],
-      "Mục tiêu": charData["Mục tiêu"],
+      "Mục Tiêu": charData["Mục Tiêu"],
       "Tình trạng cơ thể": charData["Tình trạng cơ thể"],
       "Suy nghĩ nội tâm": charData["Suy nghĩ nội tâm"]
     };
@@ -3644,7 +3644,7 @@ function buildCoLocatedCharsAffectionPrompt({stat, runtime}) {
     return "";
   }
   const characterSummaries = [];
-  external_default().forEach(coLocatedCharIds, charId => {
+  external_default().forEach(coLocatedCharIds, charId =&gt; {
     const charData = stat.chars[charId];
     const charSettings = runtime.characterSettings?.[charId];
     if (!charData) {
@@ -3684,7 +3684,7 @@ function buildCompanionDecisionPrompt({stat, runtime}) {
     return "";
   }
   const prompts = [];
-  external_default().forEach(characterRuntimes, (charRuntime, charId) => {
+  external_default().forEach(characterRuntimes, (charRuntime, charId) =&gt; {
     const decision = charRuntime.companionDecision;
     if (!decision || !decision.do) {
       return;
@@ -3727,7 +3727,7 @@ function buildFestivalPrompt({runtime}) {
       const line = `【Sự kiện quan trọng - Báo trước Lễ hội】「${next.name}」sẽ bắt đầu sau ${next.days_until} ngày (Từ ${next.month}/${next.start_day} đến ${next.month}/${next.end_day}), Địa điểm tổ chức: ${next.host}. Tập tục: ${customsText}`;
       prompts.push(line);
     }
-    if (prompts.length > 0) {
+    if (prompts.length &gt; 0) {
       festival_logger.debug(funcName, "Tạo prompt gợi ý lễ hội:", prompts);
     }
     return prompts;
@@ -3767,7 +3767,7 @@ function buildIncidentPrompt({runtime, stat}) {
       ${activeIncident.detail}
     `);
   }
-  if (activeIncident.raw && activeIncident.name) {
+  if (activeIncident.raw &amp;&amp; activeIncident.name) {
     try {
       const wrappedStructure = {
         incidents: {
@@ -3798,7 +3798,7 @@ function buildLegalLocationsPrompt({runtime}) {
   if (!legalLocations) {
     return "";
   }
-  const locationsString = legalLocations.map(loc => loc.name).join(", ");
+  const locationsString = legalLocations.map(loc =&gt; loc.name).join(", ");
   const prompt = `【Địa điểm hợp lệ】: Dưới đây là tất cả các tên địa điểm hợp pháp trong thời điểm hiện tại: [${locationsString}]. Trong quá trình cập nhật bất kỳ biến nào liên quan đến địa điểm, bạn chỉ được phép sử dụng các địa điểm nằm trong danh sách trên.`;
   return prompt;
 }
@@ -3817,9 +3817,9 @@ function buildMainBodyWrapperTagPrompt({stat}) {
       main_body_wrapper_tag_logger.debug(funcName, "config.mainBodyTags chưa được thiết lập hoặc bị trống, bỏ qua.");
       return null;
     }
-    const tagExamples = tags.map(tag => {
+    const tagExamples = tags.map(tag =&gt; {
       const L = "<";
-      const R = ">";
+      const R = "&gt;";
       const SL = "/";
       return `${L}${tag}${R}...${L}${SL}${tag}${R}`;
     }).join(" hoặc ");
@@ -3875,7 +3875,7 @@ function buildRemoteMentionedCharactersPrompt({stat, runtime}) {
     return "";
   }
   const charactersInfo = {};
-  external_default().forEach(remoteMentionedIds, charId => {
+  external_default().forEach(remoteMentionedIds, charId =&gt; {
     const charData = stat.chars[charId];
     if (!charData) {
       remote_mentioned_characters_logger.warn(funcName, `Trong stat.chars không tìm thấy dữ liệu về nhân vật được nhắc tới ${charId}.`);
@@ -3884,9 +3884,9 @@ function buildRemoteMentionedCharactersPrompt({stat, runtime}) {
     charactersInfo[charId] = {
       name: charData.name,
       "Độ hảo cảm": charData["Độ hảo cảm"],
-      "Khu vực hiện tại": charData["Khu vực hiện tại"],
+      "Khu Vực Hiện Tại": charData["Khu Vực Hiện Tại"],
       "Khu vực sinh sống": charData["Khu vực sinh sống"],
-      "Mục tiêu": charData["Mục tiêu"],
+      "Mục Tiêu": charData["Mục Tiêu"],
       "Tình trạng cơ thể": charData["Tình trạng cơ thể"],
       "Suy nghĩ nội tâm": charData["Suy nghĩ nội tâm"]
     };
@@ -3908,7 +3908,7 @@ function formatPath(path) {
   if (!path || !path.steps || path.steps.length === 0) {
     return "";
   }
-  return path.steps.map(step => `${step.from}->${step.to}`).join("→");
+  return path.steps.map(step =&gt; `${step.from}-&gt;${step.to}`).join("→");
 }
 
 function buildRoutePrompt({runtime, stat}) {
@@ -3919,7 +3919,7 @@ function buildRoutePrompt({runtime, stat}) {
   if (!routeInfo || external_default().isEmpty(routeInfo.routes)) {
     return `【Gợi ý Tuyến đường】${characterName} hiện đang ở ${currentUserLocation}, tạm thời chưa phát hiện điểm đến có thể tới.`;
   }
-  const lines = routeInfo.routes.map(route => {
+  const lines = routeInfo.routes.map(route =&gt; {
     const pathString = formatPath(route.path);
     if (!pathString) return "";
     return `Tuyến đường đến ${route.destination} (${route.path.hops} bước): ${pathString}`;
@@ -3947,7 +3947,7 @@ function buildTimePrompt({runtime}) {
     const month = now.month ?? 0;
     const day = now.day ?? 0;
     const weekdayName = now.weekdayName || "Tuần?";
-    const hourMinute = now.hm || (Number.isFinite(now.hour) && Number.isFinite(now.minute) ? String(now.hour).padStart(2, "0") + ":" + String(now.minute).padStart(2, "0") : "--:--");
+    const hourMinute = now.hm || (Number.isFinite(now.hour) &amp;&amp; Number.isFinite(now.minute) ? String(now.hour).padStart(2, "0") + ":" + String(now.minute).padStart(2, "0") : "--:--");
     const periodName = now.periodName || "—";
     const seasonName = now.seasonName || "";
     const monthString = String(month).padStart(2, "0");
@@ -4020,7 +4020,7 @@ function buildWeatherPrompt({runtime}) {
     if (lines.length === 0) {
       return null;
     }
-    const prompt = [ "Tình hình thời tiết：", ...lines.map(line => `- ${line}`) ].join("\n");
+    const prompt = [ "Tình hình thời tiết：", ...lines.map(line =&gt; `- ${line}`) ].join("\n");
     weather_logger.debug(funcName, "Tạo thành công prompt thời tiết.", {
       prompt
     });
@@ -4064,7 +4064,7 @@ function buildPrompt({runtime, stat}) {
   const funcName = "buildPrompt";
   prompt_builder_logger.debug(funcName, "Bắt đầu tạo các câu lệnh prompt...");
   const prompts = [];
-  prompts.push("<Tiêu chuẩn biên soạn cốt truyện>");
+  prompts.push("<Tiêu chuẩn biên soạn cốt truyện&gt;");
   prompts.push("**Sau đây là các** tiêu chuẩn cốt lõi** để biên soạn cốt truyện mới nhất, bạn bắt buộc phải tuân thủ nghiêm ngặt các thiết lập sau đây trong quá trình sáng tác.**");
   const timePrompt = buildTimePrompt({
     runtime
@@ -4081,7 +4081,7 @@ function buildPrompt({runtime, stat}) {
   const festivalPrompts = buildFestivalPrompt({
     runtime
   });
-  if (festivalPrompts.length > 0) {
+  if (festivalPrompts.length &gt; 0) {
     prompts.push(...festivalPrompts);
   }
   const incidentPrompt = buildIncidentPrompt({
@@ -4092,8 +4092,8 @@ function buildPrompt({runtime, stat}) {
     prompts.push(incidentPrompt);
   }
   prompts.push("**Trên đây là các** tiêu chuẩn cốt lõi** để biên soạn cốt truyện mới nhất, bạn bắt buộc phải tuân thủ nghiêm ngặt các thiết lập trên trong quá trình sáng tác.**");
-  prompts.push("</Tiêu chuẩn biên soạn cốt truyện>");
-  prompts.push("<Cốt lõi cho sự nhập vai>");
+  prompts.push("</Tiêu chuẩn biên soạn cốt truyện&gt;");
+  prompts.push("<Cốt lõi cho sự nhập vai&gt;");
   prompts.push("**Để nâng cao sự chân thực (tính nhập vai) trong cốt truyện mà bạn tạo ra, hãy tham khảo các nội dung dưới đây để sáng tác diễn biến mới.**");
   const routePrompt = buildRoutePrompt({
     runtime,
@@ -4106,7 +4106,7 @@ function buildPrompt({runtime, stat}) {
     runtime,
     stat
   });
-  if (characterMovementPrompts.length > 0) {
+  if (characterMovementPrompts.length &gt; 0) {
     prompts.push(...characterMovementPrompts);
   }
   const coLocatedCharsAffectionPrompt = buildCoLocatedCharsAffectionPrompt({
@@ -4124,8 +4124,8 @@ function buildPrompt({runtime, stat}) {
     prompts.push(companionDecisionPrompt);
   }
   prompts.push("**Để nâng cao sự chân thực (tính nhập vai) trong cốt truyện mà bạn tạo ra, hãy tham khảo các nội dung trên đây để sáng tác diễn biến mới.**");
-  prompts.push("</Cốt lõi cho sự nhập vai>");
-  prompts.push("<Các biến ERA **Bắt buộc** phải cập nhật trong lượt này>");
+  prompts.push("</Cốt lõi cho sự nhập vai&gt;");
+  prompts.push("<Các biến ERA **Bắt buộc** phải cập nhật trong lượt này&gt;");
   prompts.push("**Dưới đây là các biến và cấu trúc biến mà bạn BẮT BUỘC phải cập nhật theo luật lệ chỉnh sửa biến ERA trong lượt này.**");
   const ayaNewsPrompt = buildAyaNewsPrompt({
     runtime,
@@ -4167,15 +4167,15 @@ function buildPrompt({runtime, stat}) {
     prompts.push(remoteMentionedCharactersPrompt);
   }
   prompts.push("**Trên đây là các biến và cấu trúc biến mà bạn BẮT BUỘC phải cập nhật theo luật lệ chỉnh sửa biến ERA trong lượt này.**");
-  prompts.push("</Các biến ERA **Bắt buộc** phải cập nhật trong lượt này>");
+  prompts.push("</Các biến ERA **Bắt buộc** phải cập nhật trong lượt này&gt;");
   const mainBodyWrapperTagPrompt = buildMainBodyWrapperTagPrompt({
     stat
   });
   if (mainBodyWrapperTagPrompt) {
-    prompts.push("<Yêu cầu về định dạng>");
+    prompts.push("<Yêu cầu về định dạng&gt;");
     prompts.push(mainBodyWrapperTagPrompt);
     prompts.push("Và sau đó, bạn **bắt buộc phải sinh ra mã `variablThink` (câu lệnh suy nghĩ cập nhật biến) NẰM NGOÀI các nhãn chính văn đó** sau khi đã tạo xong cốt truyện, đồng thời tạo ra các khối cập nhật biến tương ứng theo nội dung của `think`.");
-    prompts.push("</Yêu cầu về định dạng>");
+    prompts.push("</Yêu cầu về định dạng&gt;");
   }
   const finalPrompt = prompts.join("\n\n");
   prompt_builder_logger.debug(funcName, "Các câu lệnh prompt đã được tạo xong.");
@@ -4183,8 +4183,8 @@ function buildPrompt({runtime, stat}) {
 }
 
 function emitAndListen({emitEventName, emitPayload, listenEventName, filter}) {
-  return new Promise(resolve => {
-    const listener = detail => {
+  return new Promise(resolve =&gt; {
+    const listener = detail =&gt; {
       if (filter(detail)) {
         eventRemoveListener(listenEventName, listener);
         resolve(detail);
@@ -4211,7 +4211,7 @@ async function performWrite(operation, payload, waitForResponse = false) {
       emitEventName: eventName,
       emitPayload: payload,
       listenEventName: ERA_BROADCAST_EVENT_NAMES.WRITE_DONE,
-      filter: p => p.actions.apiWrite
+      filter: p =&gt; p.actions.apiWrite
     });
   } else {
     eventEmit(eventName, payload);
@@ -4258,7 +4258,7 @@ function performQuery(operation, payload) {
     emitEventName: eventName,
     emitPayload: payload,
     listenEventName: constants_ERA_BROADCAST_EVENT_NAMES.QUERY_RESULT,
-    filter: p => p.queryType === queryType && external_default().isEqual(p.request, payload)
+    filter: p =&gt; p.queryType === queryType &amp;&amp; external_default().isEqual(p.request, payload)
   });
 }
 
@@ -4275,8 +4275,8 @@ function getSnapshotsBetweenMks(payload) {
 }
 
 function getSnapshotsBetweenMks_fake(payload) {
-  return new Promise(resolve => {
-    eventOnce("dev:fakeSnapshotsResponse", response => {
+  return new Promise(resolve =&gt; {
+    eventOnce("dev:fakeSnapshotsResponse", response =&gt; {
       resolve(response.result);
     });
     eventEmit("dev:getSnapshotsBetweenMks", payload);
@@ -4345,7 +4345,7 @@ async function fetchSnapshotsForTimeFlags({runtime, mk, isFake}) {
 
 const anchor_limiter_logger = new Logger("GSKO-BASE/core/time-chat-mk-sync/anchor-limiter");
 
-const toNumberLimit = value => {
+const toNumberLimit = value =&gt; {
   if (typeof value !== "number" || !Number.isFinite(value)) {
     return null;
   }
@@ -4353,9 +4353,9 @@ const toNumberLimit = value => {
   return normalized;
 };
 
-const collectMkList = selectedMks => selectedMks.filter(value => typeof value === "string" && value.length > 0);
+const collectMkList = selectedMks =&gt; selectedMks.filter(value =&gt; typeof value === "string" &amp;&amp; value.length &gt; 0);
 
-const resolveLimit = (limits, key) => {
+const resolveLimit = (limits, key) =&gt; {
   if (!limits) {
     return null;
   }
@@ -4395,7 +4395,7 @@ function clampTimeChatMkAnchors({runtime, stat, selectedMks, mk}) {
   anchor_limiter_logger.debug(funcName, "Đã phân tích các selectedMks hợp lệ.", {
     mkList
   });
-  const initialMk = typeof mk === "string" && mk.length > 0 ? mk : mkList[mkList.length - 1];
+  const initialMk = typeof mk === "string" &amp;&amp; mk.length &gt; 0 ? mk : mkList[mkList.length - 1];
   let currentIndex = mkList.lastIndexOf(initialMk);
   if (currentIndex < 0) {
     currentIndex = mkList.length - 1;
@@ -4408,7 +4408,7 @@ function clampTimeChatMkAnchors({runtime, stat, selectedMks, mk}) {
   const anchors = mkAnchors;
   const previousAnchors = clock.previousMkAnchors ?? {};
   let changed = false;
-  const clampAnchor = options => {
+  const clampAnchor = options =&gt; {
     const {baseAnchorGetter, currentAnchorGetter, anchorSetter, limit, flagActive, logKey} = options;
     if (!flagActive) {
       anchor_limiter_logger.debug(funcName, "Cờ (flag) chưa được kích hoạt, bỏ qua giới hạn.", {
@@ -4418,7 +4418,7 @@ function clampTimeChatMkAnchors({runtime, stat, selectedMks, mk}) {
     }
     const baseAnchor = baseAnchorGetter() ?? null;
     const currentAnchor = currentAnchorGetter() ?? null;
-    const applyAnchor = (value, reason) => {
+    const applyAnchor = (value, reason) =&gt; {
       if (currentAnchor !== value) {
         anchorSetter(value);
         changed = true;
@@ -4430,7 +4430,7 @@ function clampTimeChatMkAnchors({runtime, stat, selectedMks, mk}) {
       }
     };
     if (limit == null) {
-      if (baseAnchor && baseAnchor !== currentAnchor) {
+      if (baseAnchor &amp;&amp; baseAnchor !== currentAnchor) {
         applyAnchor(baseAnchor, "Chưa được cấu hình giới hạn, khôi phục lại điểm neo trong lịch sử.");
       } else {
         anchor_limiter_logger.debug(funcName, "Không tìm được giá trị giới hạn tương ứng, bỏ qua giới hạn.", {
@@ -4440,8 +4440,8 @@ function clampTimeChatMkAnchors({runtime, stat, selectedMks, mk}) {
       return;
     }
     const anchorIndex = baseAnchor ? mkList.lastIndexOf(baseAnchor) : -1;
-    const distance = anchorIndex >= 0 ? currentIndex - anchorIndex : Number.POSITIVE_INFINITY;
-    if (baseAnchor && anchorIndex >= 0 && distance <= limit) {
+    const distance = anchorIndex &gt;= 0 ? currentIndex - anchorIndex : Number.POSITIVE_INFINITY;
+    if (baseAnchor &amp;&amp; anchorIndex &gt;= 0 &amp;&amp; distance <= limit) {
       if (baseAnchor !== currentAnchor) {
         applyAnchor(baseAnchor, "Khoảng cách điểm neo nằm trong phạm vi giới hạn, khôi phục lại điểm neo trong lịch sử.");
       } else {
@@ -4468,7 +4468,7 @@ function clampTimeChatMkAnchors({runtime, stat, selectedMks, mk}) {
       });
       return;
     }
-    applyAnchor(targetMk, baseAnchor && anchorIndex >= 0 ? "Điểm neo đã bị định vị lại theo giới hạn." : "Điểm neo trong lịch sử bị khuyết thiếu, chọn điểm neo dự phòng căn cứ vào giới hạn.");
+    applyAnchor(targetMk, baseAnchor &amp;&amp; anchorIndex &gt;= 0 ? "Điểm neo đã bị định vị lại theo giới hạn." : "Điểm neo trong lịch sử bị khuyết thiếu, chọn điểm neo dự phòng căn cứ vào giới hạn.");
     anchor_limiter_logger.debug(funcName, "Chi tiết quá trình điều chỉnh giới hạn điểm neo", {
       logKey,
       limit,
@@ -4483,9 +4483,9 @@ function clampTimeChatMkAnchors({runtime, stat, selectedMks, mk}) {
   };
   for (const key of CLOCK_ROOT_FLAG_KEYS) {
     clampAnchor({
-      baseAnchorGetter: () => previousAnchors[key] ?? anchors[key],
-      currentAnchorGetter: () => anchors[key],
-      anchorSetter: value => {
+      baseAnchorGetter: () =&gt; previousAnchors[key] ?? anchors[key],
+      currentAnchorGetter: () =&gt; anchors[key],
+      anchorSetter: value =&gt; {
         if (anchors[key] !== value) {
           anchors[key] = value;
         }
@@ -4501,9 +4501,9 @@ function clampTimeChatMkAnchors({runtime, stat, selectedMks, mk}) {
     for (const key of BY_PERIOD_KEYS) {
       const limit = periodLimits ? toNumberLimit(periodLimits[key]) : null;
       clampAnchor({
-        baseAnchorGetter: () => previousAnchors.period?.[key] ?? anchors.period?.[key],
-        currentAnchorGetter: () => anchors.period?.[key],
-        anchorSetter: value => {
+        baseAnchorGetter: () =&gt; previousAnchors.period?.[key] ?? anchors.period?.[key],
+        currentAnchorGetter: () =&gt; anchors.period?.[key],
+        anchorSetter: value =&gt; {
           anchors.period = anchors.period ?? {};
           if (anchors.period[key] !== value) {
             anchors.period[key] = value;
@@ -4521,9 +4521,9 @@ function clampTimeChatMkAnchors({runtime, stat, selectedMks, mk}) {
     for (const key of BY_SEASON_KEYS) {
       const limit = seasonLimits ? toNumberLimit(seasonLimits[key]) : null;
       clampAnchor({
-        baseAnchorGetter: () => previousAnchors.season?.[key] ?? anchors.season?.[key],
-        currentAnchorGetter: () => anchors.season?.[key],
-        anchorSetter: value => {
+        baseAnchorGetter: () =&gt; previousAnchors.season?.[key] ?? anchors.season?.[key],
+        currentAnchorGetter: () =&gt; anchors.season?.[key],
+        anchorSetter: value =&gt; {
           anchors.season = anchors.season ?? {};
           if (anchors.season[key] !== value) {
             anchors.season[key] = value;
@@ -4588,11 +4588,11 @@ function syncTimeChatMkAnchors({stat, runtime, mk}) {
   const nextAnchors = external_default().cloneDeep(currentAnchors);
   const changeLog = [];
   let changed = false;
-  const appendAnchorChange = (pathSuffix, previousValue, reason) => {
+  const appendAnchorChange = (pathSuffix, previousValue, reason) =&gt; {
     changeLog.push(createChangeLogEntry("time-chat-mk-sync", `cache.timeChatMkSync.anchors.${pathSuffix}`, previousValue ?? null, currentMk, reason));
     changed = true;
   };
-  const ensureAnchor = key => {
+  const ensureAnchor = key =&gt; {
     if (nextAnchors[key] == null) {
       appendAnchorChange(key, currentAnchors[key], `backfill ${key} anchor with current MK`);
       nextAnchors[key] = currentMk;
@@ -4602,11 +4602,11 @@ function syncTimeChatMkAnchors({stat, runtime, mk}) {
       });
     }
   };
-  const setAnchorWhenFlagged = (key, flag) => {
-    if (flag && nextAnchors[key] !== currentMk) {
+  const setAnchorWhenFlagged = (key, flag) =&gt; {
+    if (flag &amp;&amp; nextAnchors[key] !== currentMk) {
       appendAnchorChange(key, currentAnchors[key], `flag ${key} triggered anchor update`);
       nextAnchors[key] = currentMk;
-      sync_logger.debug(funcName, "Phát hiện bit cờ trạng thái -> cập nhật điểm neo", {
+      sync_logger.debug(funcName, "Phát hiện bit cờ trạng thái -&gt; cập nhật điểm neo", {
         key,
         mk: currentMk
       });
@@ -4619,17 +4619,17 @@ function syncTimeChatMkAnchors({stat, runtime, mk}) {
   if (flags.byPeriod) {
     const nextPeriodAnchors = nextAnchors.period = nextAnchors.period ?? {};
     for (const key of BY_PERIOD_KEYS) {
-      if (flags.byPeriod[key] && nextPeriodAnchors[key] !== currentMk) {
+      if (flags.byPeriod[key] &amp;&amp; nextPeriodAnchors[key] !== currentMk) {
         appendAnchorChange(`period.${key}`, currentAnchors.period?.[key], `flag byPeriod.${key} triggered anchor update`);
         nextPeriodAnchors[key] = currentMk;
-        sync_logger.debug(funcName, "Cờ khung giờ được kích hoạt -> cập nhật điểm neo", {
+        sync_logger.debug(funcName, "Cờ khung giờ được kích hoạt -&gt; cập nhật điểm neo", {
           periodKey: key,
           mk: currentMk
         });
       }
     }
     const currentPeriodKey = BY_PERIOD_KEYS[clock.now?.periodIdx ?? -1];
-    if (currentPeriodKey && nextPeriodAnchors[currentPeriodKey] == null) {
+    if (currentPeriodKey &amp;&amp; nextPeriodAnchors[currentPeriodKey] == null) {
       appendAnchorChange(`period.${currentPeriodKey}`, currentAnchors.period?.[currentPeriodKey], `backfill current period anchor ${currentPeriodKey} with current MK`);
       nextPeriodAnchors[currentPeriodKey] = currentMk;
       sync_logger.debug(funcName, "Khung giờ hiện tại khuyết điểm neo, bổ sung", {
@@ -4641,17 +4641,17 @@ function syncTimeChatMkAnchors({stat, runtime, mk}) {
   if (flags.bySeason) {
     const nextSeasonAnchors = nextAnchors.season = nextAnchors.season ?? {};
     for (const key of BY_SEASON_KEYS) {
-      if (flags.bySeason[key] && nextSeasonAnchors[key] !== currentMk) {
+      if (flags.bySeason[key] &amp;&amp; nextSeasonAnchors[key] !== currentMk) {
         appendAnchorChange(`season.${key}`, currentAnchors.season?.[key], `flag bySeason.${key} triggered anchor update`);
         nextSeasonAnchors[key] = currentMk;
-        sync_logger.debug(funcName, "Cờ mùa được kích hoạt -> cập nhật điểm neo", {
+        sync_logger.debug(funcName, "Cờ mùa được kích hoạt -&gt; cập nhật điểm neo", {
           seasonKey: key,
           mk: currentMk
         });
       }
     }
     const currentSeasonKey = BY_SEASON_KEYS[clock.now?.seasonIdx ?? -1];
-    if (currentSeasonKey && nextSeasonAnchors[currentSeasonKey] == null) {
+    if (currentSeasonKey &amp;&amp; nextSeasonAnchors[currentSeasonKey] == null) {
       appendAnchorChange(`season.${currentSeasonKey}`, currentAnchors.season?.[currentSeasonKey], `backfill current season anchor ${currentSeasonKey} with current MK`);
       nextSeasonAnchors[currentSeasonKey] = currentMk;
       sync_logger.debug(funcName, "Mùa hiện tại bị khuyết điểm neo, bổ sung", {
@@ -4733,14 +4733,14 @@ function writeTimeProcessorResult({runtime, cache, result}) {
   cache.time.clockAck = result.newClockAck ?? undefined;
 }
 
-const PAD2 = n => n < 10 ? "0" + n : "" + n;
+const PAD2 = n =&gt; n < 10 ? "0" + n : "" + n;
 
-const ymdID = d => d.getUTCFullYear() * 1e4 + (d.getUTCMonth() + 1) * 100 + d.getUTCDate();
+const ymdID = d =&gt; d.getUTCFullYear() * 1e4 + (d.getUTCMonth() + 1) * 100 + d.getUTCDate();
 
-const ymID = d => d.getUTCFullYear() * 100 + (d.getUTCMonth() + 1);
+const ymID = d =&gt; d.getUTCFullYear() * 100 + (d.getUTCMonth() + 1);
 
-const weekStart = (d, weekStartsOn) => {
-  const w = Number(weekStartsOn) >= 0 && Number(weekStartsOn) <= 6 ? Number(weekStartsOn) : 1;
+const weekStart = (d, weekStartsOn) =&gt; {
+  const w = Number(weekStartsOn) &gt;= 0 &amp;&amp; Number(weekStartsOn) <= 6 ? Number(weekStartsOn) : 1;
   const dow = d.getUTCDay();
   const diff = (dow - w + 7) % 7;
   const x = new Date(d.getTime() - diff * 864e5);
@@ -4760,9 +4760,9 @@ function periodIndexOf(mins) {
 }
 
 function seasonIndexOf(m) {
-  if (m >= 3 && m <= 5) return 0;
-  if (m >= 6 && m <= 8) return 1;
-  if (m >= 9 && m <= 11) return 2;
+  if (m &gt;= 3 &amp;&amp; m <= 5) return 0;
+  if (m &gt;= 6 &amp;&amp; m <= 8) return 1;
+  if (m &gt;= 9 &amp;&amp; m <= 11) return 2;
   return 3;
 }
 
@@ -4786,7 +4786,7 @@ function processTime({stat, prevClockAck}) {
     const baseMS = Number.isNaN(epochMS) ? 0 : epochMS;
     let tzMin = 0;
     const tzMatch = String(epochISO).match(/(?:([+-])(\d{2}):?(\d{2})|Z)$/);
-    if (tzMatch && tzMatch[0] !== "Z") {
+    if (tzMatch &amp;&amp; tzMatch[0] !== "Z") {
       tzMin = (tzMatch[1] === "-" ? -1 : 1) * (parseInt(tzMatch[2], 10) * 60 + parseInt(tzMatch[3], 10));
     }
     const nowUTCms = baseMS + tpMin * 6e4;
@@ -4804,7 +4804,7 @@ function processTime({stat, prevClockAck}) {
     const yearID = year;
     const weekdayIdx = (local.getUTCDay() - 1 + 7) % 7;
     const weekdayName = TIME_WEEK_NAMES[weekdayIdx] || `Tuần?(${weekdayIdx})`;
-    const sign = tzMin >= 0 ? "+" : "-";
+    const sign = tzMin &gt;= 0 ? "+" : "-";
     const offH = ("0" + Math.floor(Math.abs(tzMin) / 60)).slice(-2);
     const offM = ("0" + Math.abs(tzMin) % 60).slice(-2);
     const iso = `${year}-${("0" + month).slice(-2)}-${("0" + day).slice(-2)}T` + `${("0" + local.getUTCHours()).slice(-2)}:${("0" + local.getUTCMinutes()).slice(-2)}:${("0" + local.getUTCSeconds()).slice(-2)}` + `${sign}${offH}:${offM}`;
@@ -4830,7 +4830,7 @@ function processTime({stat, prevClockAck}) {
       newWeek = newMonth || w;
       newDay = newWeek || d;
       newPeriod = newDay || p;
-      time_processor_processor_logger.debug(funcName, `So sánh: raw={d:${d},w:${w},m:${m},y:${y},s:${s},p:${p}} -> cascade={day:${newDay},week:${newWeek},month:${newMonth},year:${newYear},season:${newSeason},period:${newPeriod}}`);
+      time_processor_processor_logger.debug(funcName, `So sánh: raw={d:${d},w:${w},m:${m},y:${y},s:${s},p:${p}} -&gt; cascade={day:${newDay},week:${newWeek},month:${newMonth},year:${newYear},season:${newSeason},period:${newPeriod}}`);
     } else {
       time_processor_processor_logger.debug(funcName, "Lần đầu tiên hoặc lượt trước không có ACK: Không kích hoạt bất kỳ new* nào (Tất cả bằng false)");
     }
@@ -5069,7 +5069,7 @@ function buildWeatherRuntime({clock, current}) {
   const anchorIso = formatDate(baseDate);
   const newDayFlag = Boolean(clock.flags?.newDay);
   const needsRefresh = !current || current.anchorDayISO !== anchorIso;
-  if (!needsRefresh && !newDayFlag) {
+  if (!needsRefresh &amp;&amp; !newDayFlag) {
     return current;
   }
   const days = [];
@@ -5172,7 +5172,7 @@ function calculateWindLevel(seed, bias) {
 }
 
 function buildNarrative({weekdayName, conditionLabel, temperature, precipitationChance, windLevel}) {
-  const precipText = precipitationChance > .6 ? "Tỷ lệ lượng mưa cao" : precipitationChance < .2 ? "Hầu như không có lượng mưa" : "Có khả năng mưa rải rác";
+  const precipText = precipitationChance &gt; .6 ? "Tỷ lệ lượng mưa cao" : precipitationChance < .2 ? "Hầu như không có lượng mưa" : "Có khả năng mưa rải rác";
   return `${weekdayName} ${conditionLabel}，Cao nhất ${temperature.maxC}C / Thấp nhất ${temperature.minC}C，${precipText}，Cấp gió là ${windLevel}.`;
 }
 
@@ -5258,7 +5258,7 @@ function processAyaNews(runtime) {
     return runtime;
   }
   aya_news_processor_processor_logger.debug(funcName, `Đã tìm thấy startMk của newDay: ${startMk}`);
-  const startIndex = snapshots.findIndex(s => s.mk === startMk);
+  const startIndex = snapshots.findIndex(s =&gt; s.mk === startMk);
   if (startIndex === -1) {
     aya_news_processor_processor_logger.warn(funcName, `Trong snapshots không tìm thấy snapshot tương ứng với startMk "${startMk}", trả kết quả về sớm.`);
     return runtime;
@@ -5291,12 +5291,12 @@ function processAyaNews(runtime) {
       aya_news_processor_processor_logger.debug(funcName, `Bên trong snapshot hiện tại (mk: ${snapshot.mk}) không tìm thấy Shameimaru Aya (ID: ${AYA_ID}), bỏ qua.`);
       continue;
     }
-    const ayaLocation = ayaCharData["Khu vực hiện tại"];
-    const ayaTarget = ayaCharData["Mục tiêu"];
+    const ayaLocation = ayaCharData["Khu Vực Hiện Tại"];
+    const ayaTarget = ayaCharData["Mục Tiêu"];
     const {time} = cache;
     const {clockAck} = time;
     if (!ayaLocation || !ayaTarget) {
-      aya_news_processor_processor_logger.debug(funcName, `Dữ liệu về Shameimaru Aya chưa đầy đủ (thiếu Khu vực hiện tại hoặc Mục tiêu), bỏ qua.`, {
+      aya_news_processor_processor_logger.debug(funcName, `Dữ liệu về Shameimaru Aya chưa đầy đủ (thiếu Khu Vực Hiện Tại hoặc Mục Tiêu), bỏ qua.`, {
         ayaCharData
       });
       continue;
@@ -5307,10 +5307,10 @@ function processAyaNews(runtime) {
       if (charId === ayaCharId) continue;
       if (Object.prototype.hasOwnProperty.call(stat.chars, charId)) {
         const otherCharData = stat.chars[charId];
-        if (otherCharData["Khu vực hiện tại"] === ayaLocation) {
+        if (otherCharData["Khu Vực Hiện Tại"] === ayaLocation) {
           let doing = "đang làm chuyện kỳ lạ";
-          if (otherCharData["Mục tiêu"]) {
-            doing = "đang " + otherCharData["Mục tiêu"];
+          if (otherCharData["Mục Tiêu"]) {
+            doing = "đang " + otherCharData["Mục Tiêu"];
           }
           const otherInfo = {
             id: charId,
@@ -5362,10 +5362,10 @@ let isReplaying = false;
 function isSelfDispatched(args) {
   if (args.length === 0) return false;
   const maybeFlag = args[args.length - 1];
-  return typeof maybeFlag === "boolean" && maybeFlag === SELF_DISPATCH_FLAG;
+  return typeof maybeFlag === "boolean" &amp;&amp; maybeFlag === SELF_DISPATCH_FLAG;
 }
 
-eventOn("GSKO:showUI", (...args) => {
+eventOn("GSKO:showUI", (...args) =&gt; {
   const funcName = "onShowUI";
   if (isSelfDispatched(args)) {
     if (isReplaying) {
@@ -5380,7 +5380,7 @@ eventOn("GSKO:showUI", (...args) => {
   show_ui_relay_logger.debug(funcName, "Các thông số GSKO:showUI mới nhất đã được lưu lại trong cache.", cachedArgs);
 });
 
-eventOn("GSKO:requireData", () => {
+eventOn("GSKO:requireData", () =&gt; {
   const funcName = "onRequireData";
   if (!cachedArgs) {
     show_ui_relay_logger.debug(funcName, "Nhận được GSKO:requireData nhưng chưa lưu bất kỳ dữ liệu nào trong cache, bỏ qua.");
@@ -5389,9 +5389,9 @@ eventOn("GSKO:requireData", () => {
   show_ui_relay_logger.debug(funcName, "Đã nhận GSKO:requireData, chuẩn bị phát lại (replay) dữ liệu UI lưu trong cache.");
   isReplaying = true;
   const dispatchResult = eventEmit("GSKO:showUI", ...cachedArgs, SELF_DISPATCH_FLAG);
-  Promise.resolve(dispatchResult).catch(error => {
+  Promise.resolve(dispatchResult).catch(error =&gt; {
     show_ui_relay_logger.error(funcName, "eventEmit bị lỗi khi phát lại (replay) dữ liệu trong cache.", error);
-  }).finally(() => {
+  }).finally(() =&gt; {
     if (isReplaying) {
       isReplaying = false;
     }
@@ -5524,9 +5524,9 @@ async function processWorldBookConfigs({stat}) {
   }
   try {
     const worldBookEntries = await getWorldbook(primaryWorldbookName);
-    const taggedEntries = worldBookEntries.filter(entry => TAG_REGEX.test(entry.name));
-    const sortedEntries = external_default().sortBy(taggedEntries, entry => entry.position.order);
-    const configsByTag = sortedEntries.reduce((acc, entry) => {
+    const taggedEntries = worldBookEntries.filter(entry =&gt; TAG_REGEX.test(entry.name));
+    const sortedEntries = external_default().sortBy(taggedEntries, entry =&gt; entry.position.order);
+    const configsByTag = sortedEntries.reduce((acc, entry) =&gt; {
       const match = entry.name.match(TAG_REGEX);
       if (!match) return acc;
       const tagName = match[1];
@@ -5555,13 +5555,13 @@ async function processWorldBookConfigs({stat}) {
         mergedCount++;
       } else {
         world_book_config_processor_processor_logger.warn(funcName, `Cấu hình của nhãn [${tagName}] sau khi gộp đã thất bại ở bước xác thực, bỏ qua mục này. Chi tiết lỗi ở bên dưới:`);
-        parseResult.error.issues.forEach(issue => {
+        parseResult.error.issues.forEach(issue =&gt; {
           const path = issue.path.join(".");
           world_book_config_processor_processor_logger.warn(`${funcName}-Validation`, `Đường dẫn "${path}": ${issue.message}`);
         });
       }
     }
-    if (mergedCount > 0) {
+    if (mergedCount &gt; 0) {
       world_book_config_processor_processor_logger.log(funcName, `Tổng cộng ${mergedCount} cấu hình của các nhãn đã được gộp thành công vào trong đối tượng stat.`);
     } else {
       world_book_config_processor_processor_logger.log(funcName, "Không gộp thành công bất kỳ cấu hình nào từ Sách thế giới (Worldbook).");
@@ -5585,21 +5585,21 @@ function worldBookConfigProcessor({stat}) {
 
 function onWriteDone(listener, options = {}) {
   const {ignoreApiWrite = false} = options;
-  const wrappedListener = payload => {
-    if (ignoreApiWrite && payload.actions.apiWrite) {
+  const wrappedListener = payload =&gt; {
+    if (ignoreApiWrite &amp;&amp; payload.actions.apiWrite) {
       return;
     }
     listener(payload);
   };
   eventOn(constants_ERA_BROADCAST_EVENT_NAMES.WRITE_DONE, wrappedListener);
-  return () => {
+  return () =&gt; {
     eventRemoveListener(constants_ERA_BROADCAST_EVENT_NAMES.WRITE_DONE, wrappedListener);
   };
 }
 
 function onQueryResult(listener) {
   eventOn(ERA_BROADCAST_EVENT_NAMES.QUERY_RESULT, listener);
-  return () => {
+  return () =&gt; {
     eventRemoveListener(ERA_BROADCAST_EVENT_NAMES.QUERY_RESULT, listener);
   };
 }
@@ -5646,9 +5646,9 @@ function logState(moduleName, modified, {stat, runtime, cache}) {
   GSKO_BASE_logger.log("logState", title, data);
 }
 
-$(() => {
+$(() =&gt; {
   GSKO_BASE_logger.log("main", "Script xử lý dữ liệu nền đã được tải");
-  const handleWriteDone = async (payload, isFakeEvent = false) => {
+  const handleWriteDone = async (payload, isFakeEvent = false) =&gt; {
     const {statWithoutMeta, mk, editLogs, selectedMks} = payload;
     GSKO_BASE_logger.log("handleWriteDone", "Đã nhận dữ liệu stat gốc", statWithoutMeta);
     const latestMessages = getChatMessages(-1);
@@ -5662,7 +5662,7 @@ $(() => {
     const parseResult = StatSchema.safeParse(statWithoutMeta);
     if (!parseResult.success) {
       GSKO_BASE_logger.error("handleWriteDone", "Xác thực cấu trúc dữ liệu Stat thất bại. Dưới đây là lỗi chi tiết:");
-      parseResult.error.issues.forEach(issue => {
+      parseResult.error.issues.forEach(issue =&gt; {
         const path = issue.path.join(".");
         const receivedValue = external_default().get(statWithoutMeta, issue.path);
         GSKO_BASE_logger.error("Stat-Validation", `Đường dẫn "${path}": ${issue.message}. (Giá trị nhận được: ${JSON.stringify(receivedValue, null, 2)})`);
@@ -5887,26 +5887,26 @@ $(() => {
       }
     }
   };
-  onWriteDone(detail => {
+  onWriteDone(detail =&gt; {
     GSKO_BASE_logger.log("main", "Đã nhận sự kiện era:writeDone", detail);
     if (detail?.actions?.apiWrite === true) {
       GSKO_BASE_logger.log("onWriteDone", "Phát hiện sự kiện có cờ apiWrite, bỏ qua logic làm mới");
       return;
     }
-    handleWriteDone(detail, false).catch(error => {
+    handleWriteDone(detail, false).catch(error =&gt; {
       GSKO_BASE_logger.error("onWriteDone", "handleWriteDone xảy ra từ chối Promise (Promise rejection) chưa được xử lý:", error);
     });
   }, {
     ignoreApiWrite: true
   });
-  eventOn("dev:fakeWriteDone", detail => {
+  eventOn("dev:fakeWriteDone", detail =&gt; {
     GSKO_BASE_logger.log("main", "Đã nhận sự kiện dev:fakeWriteDone giả mạo");
-    handleWriteDone(detail, true).catch(error => {
+    handleWriteDone(detail, true).catch(error =&gt; {
       GSKO_BASE_logger.error("dev:fakeWriteDone", "handleWriteDone xảy ra từ chối Promise (Promise rejection) chưa được xử lý:", error);
     });
   });
-  $(window).on("pagehide.main", () => {
+  $(window).on("pagehide.main", () =&gt; {
     GSKO_BASE_logger.log("main", "Script xử lý dữ liệu nền đã được gỡ tải");
     $(window).off(".main");
   });
-});</pre></body></html>
+});
